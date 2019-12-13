@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>HospitalApp</title>
+    </h:head>
+    <h:body>
+        <h:outputStylesheet name ="css/styles.css" />
+        Hello from Laba 2 by IS_M16 Ryabov Petr
+        <br />
+        <f:view>
+            <div id="foot">
+                <h1>
+                    <h:outputText value="Здравствуйте, вы вошли с ID: #{patientCardsBean.userId}" />
+                    <h:button value="Выйти" outcome="/index.xhtml" class="btnred" />
+                </h1>
+            </div>
+            <div id="ucard">
+                <p:panelGrid columns="2" styleClass="panelGridCenter">
+                    <f:facet name="header">
+                        Информация о клиенте
+                    </f:facet>
+
+                    <h:outputText value="Name:" />
+                    <h:outputText value="#{patientCardsBean.userCard.name}" />
+
+                    <h:outputText value="Last Name:" />
+                    <h:outputText value="#{patientCardsBean.userCard.lastName}" />
+
+                    <h:outputText value="Middle Name:" />
+                    <h:outputText value="#{patientCardsBean.userCard.middleName}" />
+
+                    <h:outputText value="Passport:" />
+                    <h:outputText value="#{patientCardsBean.userCard.passport}" />
+
+                    <h:outputText value="Address:" />
+                    <h:outputText value="#{patientCardsBean.userCard.adress}" />
+
+                    <h:outputText value="Create Date:" />
+                    <h:outputText value="#{patientCardsBean.userCard.createDate}" />
+
+                    <h:outputText value="Birth:" />
+                    <h:outputText value="#{patientCardsBean.userCard.birth}" />
+
+                    <h:outputText value="SSN:" />
+                    <h:outputText value="#{patientCardsBean.userCard.ssn}" />
+
+                    <h:outputText value="Payment:" />
+                    <h:outputText value="#{patientCardsBean.userCard.isPay}" />
+
+                    <h:outputText value="Allergy:" />
+                    <h:outputText value="#{patientCardsBean.userCard.allergy}" />
+                    
+                    
+                </p:panelGrid>
+                
+            </div>
+        </f:view>
+    </h:body>
+</html>
+

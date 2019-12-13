@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1381441413 source:/home/rain/LTANKS/LTANKS.cpp
+	<cstdlib>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+
+1381441417 /home/rain/LTANKS/models.h
+
+1382394249 source:/home/rain/LTANKS_2/LTANKS.cpp
+	<cstdlib>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+
+1381441417 /home/rain/LTANKS_2/models.h
+
+1383087337 source:/home/rain/Tanks_GUI/LTANKS.cpp
+	<ctime>
+	<cmath>
+	<iostream>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+	"kostin.h"
+	"interface.h"
+
+1382626078 /home/rain/Tanks_GUI/models.h
+
+1383086410 /home/rain/Tanks_GUI/kostin.h
+
+1383087124 /home/rain/Tanks_GUI/interface.h
+	<GL/glut.h>
+
+1383811176 source:/home/def4onka/Downloads/tanki/LTANKS.cpp
+	<ctime>
+	<cmath>
+	<iostream>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+	"kostin.h"
+	"interface.h"
+
+1383812483 /home/def4onka/Downloads/tanki/models.h
+
+1383086410 /home/def4onka/Downloads/tanki/kostin.h
+
+1383379170 /home/def4onka/Downloads/tanki/interface.h
+	<GL/glut.h>
+
+1386102565 source:/home/def4onka/tanki/LTANKS.cpp
+	<time.h>
+	<math.h>
+	<iostream>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+	"kostin.h"
+	"interface.h"
+
+1386102792 /home/def4onka/tanki/models.h
+
+1383086410 /home/def4onka/tanki/kostin.h
+
+1383379170 /home/def4onka/tanki/interface.h
+	<GL/glut.h>
+
+1386171533 source:/home/rain/tanki_2/tanki_2/LTANKS.cpp
+	<ctime>
+	<time.h>
+	<math.h>
+	<iostream>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+	"kostin.h"
+	"interface.h"
+
+1386171618 /home/rain/tanki_2/tanki_2/models.h
+
+1383086410 /home/rain/tanki_2/tanki_2/kostin.h
+
+1383379170 /home/rain/tanki_2/tanki_2/interface.h
+	<GL/glut.h>
+

@@ -1,0 +1,124 @@
+#authWindow{
+	
+	border: solid 0px black;
+	text-align: center;
+	padding: 0px;
+	
+	
+}
+
+#ucard{
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.panelGridCenter {
+    margin: 0 auto;
+}
+
+.inl{
+	display: inline;
+}
+
+.inp{
+  border: 1px solid #cccccc; 
+   background: #ffffff !important; 
+   outline: none; 
+   height: 32px;
+   width: 300px; 
+   font-size: 16px; 
+   font-family: Arial;
+   text-align: center;
+}
+
+.ui-datatable.base{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+
+
+.ui-datatable.base thead th,
+.ui-datatable-header{
+    padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    
+}
+
+.ui-datatable.base tbody td{
+    padding:10px;
+    text-align:center;
+    background-color:#DEF3CA;
+    border: 3px solid #C7EFC0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;	
+}
+
+.btn:hover {
+    background-color: #8CDF90;
+}
+
+.btnred {
+    background-color: #AC6B50;
+	border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;	
+}
+
+.btnred:hover {
+    background-color: #CF8B54;
+	
+}
+
+.sel { font-size:16px; background-color: #f5f0de; color:#7c7c7c; padding: 12px 30px; border:1px solid #e7dab0; line-height: 11px; }
+
+#foot {
+	text-align: center;
+	margin-top:5%;
+	margin-left: 30%;
+	margin-right: 30%;
+}

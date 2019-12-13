@@ -1,0 +1,2804 @@
+<dsm-model ref-id="0" crits-id-counter="5" alts-id-counter="4" cats-id-counter="0" methods-id-counter="8" root-id="1" current-method-id="6">
+   <model-params ref-id="1">
+      <param name="maa_weights">
+         <object class="com.decerns.dsmlib4.utils.ListEntry" ref-id="2">
+            <list class="java.util.ArrayList" ref-id="3">
+               <element class="java.lang.Double" ref-id="4">0.455</element>
+               <element class="java.lang.Double" ref-id="5">0.318</element>
+               <element class="java.lang.Double" ref-id="6">0.182</element>
+               <element class="java.lang.Double" ref-id="7">0.045</element>
+            </list>
+         </object>
+      </param>
+      <param name="alt_colors">
+         <object class="com.decerns.dsmlib4.utils.MapEntry" ref-id="8">
+            <map ref-id="9">
+               <element>
+                  <long ref-id="10">1</long>
+                  <object class="java.awt.Color" ref-id="11" r="193" g="64" b="194" a="255"/>
+               </element>
+               <element>
+                  <long ref-id="12">2</long>
+                  <object class="java.awt.Color" ref-id="13" r="70" g="192" b="58" a="255"/>
+               </element>
+               <element>
+                  <long ref-id="14">3</long>
+                  <object class="java.awt.Color" ref-id="15" r="196" g="110" b="63" a="255"/>
+               </element>
+               <element>
+                  <long ref-id="16">4</long>
+                  <object class="java.awt.Color" ref-id="17" r="65" g="144" b="194" a="255"/>
+               </element>
+            </map>
+         </object>
+      </param>
+   </model-params>
+   <model-crits ref-id="18">
+      <crit crit-id="1">
+         <criterion ref-id="19" id="1" name="TASK" parent-id="0"/>
+      </crit>
+      <crit crit-id="2">
+         <criterion ref-id="20" id="2" name="cost" parent-id="1"/>
+      </crit>
+      <crit crit-id="3">
+         <criterion ref-id="21" id="3" name="env" parent-id="1"/>
+      </crit>
+      <crit crit-id="4">
+         <criterion ref-id="22" id="4" name="eco" parent-id="1"/>
+      </crit>
+      <crit crit-id="5">
+         <criterion ref-id="23" id="5" name="hum" parent-id="1"/>
+      </crit>
+   </model-crits>
+   <model-crit-struct ref-id="24">
+      <crit-link crit-link-id="1">
+         <criterion-links ref-id="25" id="1">
+            <links ref-id="26">
+               <link ref="12"/>
+               <link ref="14"/>
+               <link ref="16"/>
+               <link ref-id="27">5</link>
+            </links>
+         </criterion-links>
+      </crit-link>
+      <crit-link crit-link-id="2">
+         <criterion-links ref-id="28" id="2">
+            <links ref-id="29"/>
+         </criterion-links>
+      </crit-link>
+      <crit-link crit-link-id="3">
+         <criterion-links ref-id="30" id="3">
+            <links ref-id="31"/>
+         </criterion-links>
+      </crit-link>
+      <crit-link crit-link-id="4">
+         <criterion-links ref-id="32" id="4">
+            <links ref-id="33"/>
+         </criterion-links>
+      </crit-link>
+      <crit-link crit-link-id="5">
+         <criterion-links ref-id="34" id="5">
+            <links ref-id="35"/>
+         </criterion-links>
+      </crit-link>
+   </model-crit-struct>
+   <model-alts ref-id="36">
+      <alt alt-id="1">
+         <alternative ref-id="37" id="1" name="WR"/>
+      </alt>
+      <alt alt-id="2">
+         <alternative ref-id="38" id="2" name="CM"/>
+      </alt>
+      <alt alt-id="3">
+         <alternative ref-id="39" id="3" name="UDC"/>
+      </alt>
+      <alt alt-id="4">
+         <alternative ref-id="40" id="4" name="FF"/>
+      </alt>
+   </model-alts>
+   <model-cats ref-id="41"/>
+   <model-methods ref-id="42">
+      <method method-id="1">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMMavt" ref-id="43" id="1" title="MAVT" description="MAVT">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="2">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMTopsis" ref-id="44" id="2" title="TOPSIS" description="TOPSIS">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="3">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMAhp" ref-id="45" id="3" title="AHP" description="AHP">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="4">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMPromethee" ref-id="46" id="4" title="PROMETHEE" description="PROMETHEE">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="5">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMMaut" ref-id="47" id="5" title="MAUT" description="MAUT">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="6">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMPromaa" ref-id="48" id="6" title="PROMAA" description="PROMAA">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="7">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMFmavt" ref-id="49" id="7" title="FuzzyMAVT" description="FuzzyMAVT">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="8">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMFmaa" ref-id="50" id="8" title="FMAA" description="FMAA">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+   </model-methods>
+   <weights-pool ref-id="51">
+      <entry>
+         <multi-key ref-id="52">
+            <keys length="3" ref-id="53">
+               <key class="java.lang.Long" ref-id="54">5</key>
+               <key class="java.lang.Long" ref-id="55">4</key>
+               <key class="java.lang.Integer" ref-id="56">1</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="57" d-value="0.2"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="58">
+            <keys length="3" ref-id="59">
+               <key class="java.lang.Long" ref="55"/>
+               <key class="java.lang.Long" ref="55"/>
+               <key class="java.lang.Integer" ref="56"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="60" d-value="0.4"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="61">
+            <keys length="3" ref-id="62">
+               <key class="java.lang.Long" ref-id="63">5</key>
+               <key class="java.lang.Long" ref-id="64">6</key>
+               <key class="java.lang.Integer" ref-id="65">1</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="66">
+            <r-value ref-id="67">
+               <j-params ref-id="68" type="1" lr-flag="false">
+                  <data length="2" ref-id="69">
+                     <double>0.267</double>
+                     <double>0.058</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="70" n="200" set-flag-int="1" set-flag-bool="false" delta-flag="false" left-double="0.035" right-double="0.499" h-double="0.00232" average-double="0.26700000000000196" dispersion-double="0.0033609277542031857" mode-double="0.26816">
+                  <fun length="200">
+                     <entry index="0">1.4495715225344643E-6</entry>
+                     <entry index="1">7.745451318607665E-6</entry>
+                     <entry index="2">1.5115560415920972E-5</entry>
+                     <entry index="3">2.3729400615600205E-5</entry>
+                     <entry index="4">3.378076713791785E-5</entry>
+                     <entry index="5">4.549081888061737E-5</entry>
+                     <entry index="6">5.911147170990202E-5</entry>
+                     <entry index="7">7.492913906872687E-5</entry>
+                     <entry index="8">9.326884459658587E-5</entry>
+                     <entry index="9">1.1449873163372026E-4</entry>
+                     <entry index="10">1.3903499439050905E-4</entry>
+                     <entry index="11">1.673472551573606E-4</entry>
+                     <entry index="12">1.9996441116739138E-4</entry>
+                     <entry index="13">2.374809735577528E-4</entry>
+                     <entry index="14">2.8056391925892034E-4</entry>
+                     <entry index="15">3.2996007452757917E-4</entry>
+                     <entry index="16">3.86504046181414E-4</entry>
+                     <entry index="17">4.5112671334797416E-4</entry>
+                     <entry index="18">5.248642886620178E-4</entry>
+                     <entry index="19">6.088679532969365E-4</entry>
+                     <entry index="20">7.044140649611959E-4</entry>
+                     <entry index="21">8.129149320012384E-4</entry>
+                     <entry index="22">9.359301400061716E-4</entry>
+                     <entry index="23">0.001075178409793571</entry>
+                     <entry index="24">0.0012325499573665917</entry>
+                     <entry index="25">0.0014101193173784213</entry>
+                     <entry index="26">0.0016101585818418627</entry>
+                     <entry index="27">0.0018351509953145574</entry>
+                     <entry index="28">0.002087804836624587</entry>
+                     <entry index="29">0.00237106750544395</entry>
+                     <entry index="30">0.002688139719753396</entry>
+                     <entry index="31">0.0030424897175742155</entry>
+                     <entry index="32">0.003437867343392757</entry>
+                     <entry index="33">0.0038783178866126484</entry>
+                     <entry index="34">0.0043681955262980104</entry>
+                     <entry index="35">0.004912176223597158</entry>
+                     <entry index="36">0.005515269890756863</entry>
+                     <entry index="37">0.006182831653765426</entry>
+                     <entry index="38">0.0069205720146264926</entry>
+                     <entry index="39">0.007734565709305523</entry>
+                     <entry index="40">0.008631259048757774</entry>
+                     <entry index="41">0.009617475523398315</entry>
+                     <entry index="42">0.010700419446171963</entry>
+                     <entry index="43">0.011887677406284516</entry>
+                     <entry index="44">0.013187217304921358</entry>
+                     <entry index="45">0.014607384746150967</entry>
+                     <entry index="46">0.01615689656091919</entry>
+                     <entry index="47">0.017844831249795533</entry>
+                     <entry index="48">0.01968061614111919</entry>
+                     <entry index="49">0.02167401107556335</entry>
+                     <entry index="50">0.02383508844600723</entry>
+                     <entry index="51">0.02617420944305093</entry>
+                     <entry index="52">0.028701996381555395</entry>
+                     <entry index="53">0.03142930101221428</entry>
+                     <entry index="54">0.034367168754286345</entry>
+                     <entry index="55">0.03752679882109725</entry>
+                     <entry index="56">0.04091950024855784</entry>
+                     <entry index="57">0.04455664387847879</entry>
+                     <entry index="58">0.04844961039256178</entry>
+                     <entry index="59">0.05260973453922452</entry>
+                     <entry index="60">0.05704824574341929</entry>
+                     <entry index="61">0.061776205338822</entry>
+                     <entry index="62">0.06680444071163552</entry>
+                     <entry index="63">0.07214347669515477</entry>
+                     <entry index="64">0.07780346460352475</entry>
+                     <entry index="65">0.08379410934109789</entry>
+                     <entry index="66">0.09012459506974782</entry>
+                     <entry index="67">0.09680350995969438</entry>
+                     <entry index="68">0.10383877058910579</entry>
+                     <entry index="69">0.1112375465932433</entry>
+                     <entry index="70">0.11900618619449667</entry>
+                     <entry index="71">0.12715014326965496</entry>
+                     <entry index="72">0.13567390662953935</entry>
+                     <entry index="73">0.14458093219812873</entry>
+                     <entry index="74">0.1538735787830367</entry>
+                     <entry index="75">0.1635530481262392</entry>
+                     <entry index="76">0.17361932991298534</entry>
+                     <entry index="77">0.18407115239763305</entry>
+                     <entry index="78">0.1949059392776306</entry>
+                     <entry index="79">0.20611977341102866</entry>
+                     <entry index="80">0.21770736792888684</entry>
+                     <entry index="81">0.2296620452419969</entry>
+                     <entry index="82">0.24197572438186318</entry>
+                     <entry index="83">0.2546389170493727</entry>
+                     <entry index="84">0.26764073267167776</entry>
+                     <entry index="85">0.2809688926892489</entry>
+                     <entry index="86">0.2946097542116819</entry>
+                     <entry index="87">0.308548343093603</entry>
+                     <entry index="88">0.32276839639193755</entry>
+                     <entry index="89">0.3372524140739794</entry>
+                     <entry index="90">0.3519817197532714</entry>
+                     <entry index="91">0.3669365301384549</entry>
+                     <entry index="92">0.3820960327901677</entry>
+                     <entry index="93">0.3974384716939622</entry>
+                     <entry index="94">0.4129412400742398</entry>
+                     <entry index="95">0.4285809797964974</entry>
+                     <entry index="96">0.44433368663381695</entry>
+                     <entry index="97">0.46017482060950093</entry>
+                     <entry index="98">0.4760794205719556</entry>
+                     <entry index="99">0.49202222211114566</entry>
+                     <entry index="100">0.5079777778888461</entry>
+                     <entry index="101">0.5239205794280362</entry>
+                     <entry index="102">0.5398251793904909</entry>
+                     <entry index="103">0.5556663133661749</entry>
+                     <entry index="104">0.5714190202034944</entry>
+                     <entry index="105">0.5870587599257521</entry>
+                     <entry index="106">0.6025615283060298</entry>
+                     <entry index="107">0.6179039672098244</entry>
+                     <entry index="108">0.6330634698615373</entry>
+                     <entry index="109">0.6480182802467208</entry>
+                     <entry index="110">0.662747585926013</entry>
+                     <entry index="111">0.677231603608055</entry>
+                     <entry index="112">0.6914516569063897</entry>
+                     <entry index="113">0.705390245788311</entry>
+                     <entry index="114">0.7190311073107442</entry>
+                     <entry index="115">0.7323592673283155</entry>
+                     <entry index="116">0.7453610829506208</entry>
+                     <entry index="117">0.7580242756181305</entry>
+                     <entry index="118">0.7703379547579969</entry>
+                     <entry index="119">0.7822926320711072</entry>
+                     <entry index="120">0.7938802265889656</entry>
+                     <entry index="121">0.8050940607223639</entry>
+                     <entry index="122">0.8159288476023616</entry>
+                     <entry index="123">0.8263806700870096</entry>
+                     <entry index="124">0.836446951873756</entry>
+                     <entry index="125">0.8461264212169587</entry>
+                     <entry index="126">0.8554190678018668</entry>
+                     <entry index="127">0.8643260933704564</entry>
+                     <entry index="128">0.872849856730341</entry>
+                     <entry index="129">0.8809938138054995</entry>
+                     <entry index="130">0.888762453406753</entry>
+                     <entry index="131">0.8961612294108907</entry>
+                     <entry index="132">0.9031964900403023</entry>
+                     <entry index="133">0.9098754049302491</entry>
+                     <entry index="134">0.9162058906588992</entry>
+                     <entry index="135">0.9221965353964725</entry>
+                     <entry index="136">0.9278565233048427</entry>
+                     <entry index="137">0.9331955592883621</entry>
+                     <entry index="138">0.9382237946611758</entry>
+                     <entry index="139">0.9429517542565786</entry>
+                     <entry index="140">0.9473902654607735</entry>
+                     <entry index="141">0.9515503896074364</entry>
+                     <entry index="142">0.9554433561215195</entry>
+                     <entry index="143">0.9590804997514406</entry>
+                     <entry index="144">0.9624732011789013</entry>
+                     <entry index="145">0.9656328312457124</entry>
+                     <entry index="146">0.9685706989877846</entry>
+                     <entry index="147">0.9712980036184435</entry>
+                     <entry index="148">0.9738257905569481</entry>
+                     <entry index="149">0.9761649115539919</entry>
+                     <entry index="150">0.9783259889244359</entry>
+                     <entry index="151">0.9803193838588802</entry>
+                     <entry index="152">0.9821551687502039</entry>
+                     <entry index="153">0.9838431034390803</entry>
+                     <entry index="154">0.9853926152538486</entry>
+                     <entry index="155">0.9868127826950782</entry>
+                     <entry index="156">0.9881123225937152</entry>
+                     <entry index="157">0.9892995805538278</entry>
+                     <entry index="158">0.9903825244766016</entry>
+                     <entry index="159">0.9913687409512422</entry>
+                     <entry index="160">0.9922654342906945</entry>
+                     <entry index="161">0.9930794279853735</entry>
+                     <entry index="162">0.9938171683462346</entry>
+                     <entry index="163">0.9944847301092432</entry>
+                     <entry index="164">0.9950878237764029</entry>
+                     <entry index="165">0.9956318044737021</entry>
+                     <entry index="166">0.9961216821133876</entry>
+                     <entry index="167">0.9965621326566075</entry>
+                     <entry index="168">0.9969575102824261</entry>
+                     <entry index="169">0.9973118602802469</entry>
+                     <entry index="170">0.9976289324945563</entry>
+                     <entry index="171">0.9979121951633757</entry>
+                     <entry index="172">0.9981648490046857</entry>
+                     <entry index="173">0.9983898414181585</entry>
+                     <entry index="174">0.9985898806826219</entry>
+                     <entry index="175">0.9987674500426338</entry>
+                     <entry index="176">0.9989248215902068</entry>
+                     <entry index="177">0.9990640698599942</entry>
+                     <entry index="178">0.9991870850679991</entry>
+                     <entry index="179">0.9992955859350392</entry>
+                     <entry index="180">0.9993911320467035</entry>
+                     <entry index="181">0.9994751357113384</entry>
+                     <entry index="182">0.9995488732866524</entry>
+                     <entry index="183">0.999613495953819</entry>
+                     <entry index="184">0.9996700399254729</entry>
+                     <entry index="185">0.9997194360807415</entry>
+                     <entry index="186">0.9997625190264428</entry>
+                     <entry index="187">0.9998000355888331</entry>
+                     <entry index="188">0.9998326527448431</entry>
+                     <entry index="189">0.99986096500561</entry>
+                     <entry index="190">0.9998855012683667</entry>
+                     <entry index="191">0.9999067311554038</entry>
+                     <entry index="192">0.9999250708609317</entry>
+                     <entry index="193">0.9999408885282906</entry>
+                     <entry index="194">0.9999545091811198</entry>
+                     <entry index="195">0.9999662192328626</entry>
+                     <entry index="196">0.9999762705993849</entry>
+                     <entry index="197">0.9999848844395846</entry>
+                     <entry index="198">0.9999922545486819</entry>
+                     <entry index="199">0.999998550428478</entry>
+                  </fun>
+                  <den length="201">
+                     <entry index="0">0.0024992612457490765</entry>
+                     <entry index="1">0.0029282213370726493</entry>
+                     <entry index="2">0.0034253209881974435</entry>
+                     <entry index="3">0.00400040332187086</entry>
+                     <entry index="4">0.004664567818058144</entry>
+                     <entry index="5">0.005430304373924193</entry>
+                     <entry index="6">0.006311637720286715</entry>
+                     <entry index="7">0.007324282416631263</entry>
+                     <entry index="8">0.008485808555660982</entry>
+                     <entry index="9">0.009815818200489355</entry>
+                     <entry index="10">0.011336132451914773</entry>
+                     <entry index="11">0.013070988898819339</entry>
+                     <entry index="12">0.015047249040862347</entry>
+                     <entry index="13">0.017294615088759558</entry>
+                     <entry index="14">0.019845855343281416</entry>
+                     <entry index="15">0.022737037129700342</entry>
+                     <entry index="16">0.026007766020157305</entry>
+                     <entry index="17">0.029701429813084195</entry>
+                     <entry index="18">0.03386544545764312</entry>
+                     <entry index="19">0.03855150681383853</entry>
+                     <entry index="20">0.04381583082776437</entry>
+                     <entry index="21">0.04971939937916885</entry>
+                     <entry index="22">0.056328193728532136</entry>
+                     <entry index="23">0.06371341815715713</entry>
+                     <entry index="24">0.07195170906096421</entry>
+                     <entry index="25">0.08112532543199247</entry>
+                     <entry index="26">0.0913223163468362</entry>
+                     <entry index="27">0.10263666078479723</entry>
+                     <entry index="28">0.11516837482729701</entry>
+                     <entry index="29">0.12902358105146436</entry>
+                     <entry index="30">0.1443145347325411</entry>
+                     <entry index="31">0.16115960131988946</entry>
+                     <entry index="32">0.17968317955816382</entry>
+                     <entry index="33">0.20001556459691483</entry>
+                     <entry index="34">0.22229274547667321</entry>
+                     <entry index="35">0.24665613150535043</entry>
+                     <entry index="36">0.273252202253016</entry>
+                     <entry index="37">0.3022320762026417</entry>
+                     <entry index="38">0.3337509935051744</entry>
+                     <entry index="39">0.36796770880433477</entry>
+                     <entry index="40">0.40504379072346824</entry>
+                     <entry index="41">0.44514282534596217</entry>
+                     <entry index="42">0.4884295218726996</entry>
+                     <entry index="43">0.5350687196036393</entry>
+                     <entry index="44">0.5852242964626039</entry>
+                     <entry index="45">0.6390579804594719</entry>
+                     <entry index="46">0.6967280667545148</entry>
+                     <entry index="47">0.7583880443457802</entry>
+                     <entry index="48">0.8241851378297864</entry>
+                     <entry index="49">0.8942587711737987</entry>
+                     <entry index="50">0.9687389619674756</entry>
+                     <entry index="51">1.0477446561736448</entry>
+                     <entry index="52">1.1313820149508953</entry>
+                     <entry index="53">1.219742666651592</entry>
+                     <entry index="54">1.312901938582947</entry>
+                     <entry index="55">1.4109170845299044</entry>
+                     <entry index="56">1.513825525349913</entry>
+                     <entry index="57">1.6216431211336628</entry>
+                     <entry index="58">1.7343624944551241</entry>
+                     <entry index="59">1.8519514250817175</entry>
+                     <entry index="60">1.9743513371551555</entry>
+                     <entry index="61">2.1014759002609735</entry>
+                     <entry index="62">2.2332097659575822</entry>
+                     <entry index="63">2.369407461214181</entry>
+                     <entry index="64">2.509892459794419</entry>
+                     <entry index="65">2.6544564519065634</entry>
+                     <entry index="66">2.8028588314123364</entry>
+                     <entry index="67">2.9548264185415856</entry>
+                     <entry index="68">3.110053434399285</entry>
+                     <entry index="69">3.2682017415813194</entry>
+                     <entry index="70">3.4289013629474487</entry>
+                     <entry index="71">3.5917512880510643</entry>
+                     <entry index="72">3.756320573918228</entry>
+                     <entry index="73">3.9221497438312407</entry>
+                     <entry index="74">4.0887524845376895</entry>
+                     <entry index="75">4.255617638912724</entry>
+                     <entry index="76">4.4222114875925795</entry>
+                     <entry index="77">4.587980309517517</entry>
+                     <entry index="78">4.752353207721754</entry>
+                     <entry index="79">4.914745183138621</entry>
+                     <entry index="80">5.074560435704637</entry>
+                     <entry index="81">5.231195868700582</entry>
+                     <entry index="82">5.38404476911518</entry>
+                     <entry index="83">5.532500633910267</entry>
+                     <entry index="84">5.675961109456164</entry>
+                     <entry index="85">5.813832009139659</entry>
+                     <entry index="86">5.945531372268109</entry>
+                     <entry index="87">6.070493525939777</entry>
+                     <entry index="88">6.188173110555505</entry>
+                     <entry index="89">6.29804902913572</entry>
+                     <entry index="90">6.399628280598813</entry>
+                     <entry index="91">6.492449637662792</entry>
+                     <entry index="92">6.57608713105513</entry>
+                     <entry index="93">6.650153303250476</entry>
+                     <entry index="94">6.714302196988879</entry>
+                     <entry index="95">6.768232046336627</entry>
+                     <entry index="96">6.811687641007803</entry>
+                     <entry index="97">6.844462338030103</entry>
+                     <entry index="98">6.866399698568785</entry>
+                     <entry index="99">6.877394731767451</entry>
+                     <entry index="100">6.8773947317674535</entry>
+                     <entry index="101">6.866399698568794</entry>
+                     <entry index="102">6.844462338030117</entry>
+                     <entry index="103">6.811687641007823</entry>
+                     <entry index="104">6.768232046336652</entry>
+                     <entry index="105">6.7143021969889105</entry>
+                     <entry index="106">6.650153303250511</entry>
+                     <entry index="107">6.576087131055171</entry>
+                     <entry index="108">6.492449637662838</entry>
+                     <entry index="109">6.399628280598864</entry>
+                     <entry index="110">6.298049029135776</entry>
+                     <entry index="111">6.1881731105555655</entry>
+                     <entry index="112">6.070493525939841</entry>
+                     <entry index="113">5.945531372268176</entry>
+                     <entry index="114">5.81383200913973</entry>
+                     <entry index="115">5.675961109456238</entry>
+                     <entry index="116">5.532500633910344</entry>
+                     <entry index="117">5.384044769115259</entry>
+                     <entry index="118">5.231195868700663</entry>
+                     <entry index="119">5.07456043570472</entry>
+                     <entry index="120">4.914745183138706</entry>
+                     <entry index="121">4.75235320772184</entry>
+                     <entry index="122">4.587980309517604</entry>
+                     <entry index="123">4.422211487592667</entry>
+                     <entry index="124">4.255617638912812</entry>
+                     <entry index="125">4.088752484537778</entry>
+                     <entry index="126">3.922149743831329</entry>
+                     <entry index="127">3.756320573918315</entry>
+                     <entry index="128">3.5917512880511513</entry>
+                     <entry index="129">3.4289013629475336</entry>
+                     <entry index="130">3.2682017415814038</entry>
+                     <entry index="131">3.1100534343993678</entry>
+                     <entry index="132">2.954826418541666</entry>
+                     <entry index="133">2.8028588314124145</entry>
+                     <entry index="134">2.6544564519066394</entry>
+                     <entry index="135">2.5098924597944934</entry>
+                     <entry index="136">2.3694074612142533</entry>
+                     <entry index="137">2.233209765957653</entry>
+                     <entry index="138">2.1014759002610415</entry>
+                     <entry index="139">1.9743513371552215</entry>
+                     <entry index="140">1.8519514250817803</entry>
+                     <entry index="141">1.7343624944551848</entry>
+                     <entry index="142">1.6216431211337208</entry>
+                     <entry index="143">1.5138255253499684</entry>
+                     <entry index="144">1.4109170845299575</entry>
+                     <entry index="145">1.3129019385829974</entry>
+                     <entry index="146">1.21974266665164</entry>
+                     <entry index="147">1.1313820149509408</entry>
+                     <entry index="148">1.0477446561736878</entry>
+                     <entry index="149">0.9687389619675159</entry>
+                     <entry index="150">0.8942587711738365</entry>
+                     <entry index="151">0.8241851378298226</entry>
+                     <entry index="152">0.7583880443458132</entry>
+                     <entry index="153">0.6967280667545463</entry>
+                     <entry index="154">0.6390579804595011</entry>
+                     <entry index="155">0.5852242964626316</entry>
+                     <entry index="156">0.5350687196036645</entry>
+                     <entry index="157">0.48842952187272376</entry>
+                     <entry index="158">0.44514282534598393</entry>
+                     <entry index="159">0.40504379072348873</entry>
+                     <entry index="160">0.3679677088043534</entry>
+                     <entry index="161">0.3337509935051919</entry>
+                     <entry index="162">0.3022320762026574</entry>
+                     <entry index="163">0.2732522022530312</entry>
+                     <entry index="164">0.24665613150536422</entry>
+                     <entry index="165">0.22229274547668615</entry>
+                     <entry index="166">0.20001556459692646</entry>
+                     <entry index="167">0.17968317955817484</entry>
+                     <entry index="168">0.16115960131989948</entry>
+                     <entry index="169">0.14431453473255038</entry>
+                     <entry index="170">0.12902358105147263</entry>
+                     <entry index="171">0.11516837482730469</entry>
+                     <entry index="172">0.10263666078480442</entry>
+                     <entry index="173">0.0913223163468426</entry>
+                     <entry index="174">0.0811253254319983</entry>
+                     <entry index="175">0.07195170906096952</entry>
+                     <entry index="176">0.06371341815716199</entry>
+                     <entry index="177">0.05632819372853649</entry>
+                     <entry index="178">0.04971939937917273</entry>
+                     <entry index="179">0.04381583082776792</entry>
+                     <entry index="180">0.03855150681384175</entry>
+                     <entry index="181">0.03386544545764597</entry>
+                     <entry index="182">0.029701429813086724</entry>
+                     <entry index="183">0.026007766020159587</entry>
+                     <entry index="184">0.022737037129702424</entry>
+                     <entry index="185">0.019845855343283234</entry>
+                     <entry index="186">0.01729461508876119</entry>
+                     <entry index="187">0.015047249040863764</entry>
+                     <entry index="188">0.013070988898820616</entry>
+                     <entry index="189">0.011336132451915892</entry>
+                     <entry index="190">0.009815818200490349</entry>
+                     <entry index="191">0.008485808555661856</entry>
+                     <entry index="192">0.00732428241663203</entry>
+                     <entry index="193">0.006311637720287387</entry>
+                     <entry index="194">0.0054303043739247865</entry>
+                     <entry index="195">0.004664567818058672</entry>
+                     <entry index="196">0.004000403321871315</entry>
+                     <entry index="197">0.0034253209881978416</entry>
+                     <entry index="198">0.0029282213370729927</entry>
+                     <entry index="199">0.0024992612457493783</entry>
+                     <entry index="200">0.0</entry>
+                  </den>
+               </j-random>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="71">
+            <keys length="3" ref-id="72">
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Integer" ref-id="73">1</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="74" d-value="0.1"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="75">
+            <keys length="3" ref-id="76">
+               <key class="java.lang.Long" ref-id="77">4</key>
+               <key class="java.lang.Long" ref-id="78">7</key>
+               <key class="java.lang.Integer" ref-id="79">1</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="80">
+            <f-value class="fuzzylib.core.TriangularFuzzyNumber" ref-id="81" type="triangular" left-bottom="0.114" right-bottom="0.42" top="0.267"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="82">
+            <keys length="3" ref-id="83">
+               <key class="java.lang.Long" ref-id="84">4</key>
+               <key class="java.lang.Long" ref="64"/>
+               <key class="java.lang.Integer" ref="65"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="85">
+            <r-value ref-id="86">
+               <j-params ref-id="87" type="1" lr-flag="false">
+                  <data length="2" ref-id="88">
+                     <double>0.267</double>
+                     <double>0.153</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="89" n="200" set-flag-int="1" set-flag-bool="false" delta-flag="false" left-double="-0.345" right-double="0.879" h-double="0.00612" average-double="0.26699999999999957" dispersion-double="0.02338762122418235" mode-double="0.26393999999999995">
+                  <fun length="200">
+                     <entry index="0">1.4495715225344686E-6</entry>
+                     <entry index="1">7.7454513186077E-6</entry>
+                     <entry index="2">1.511556041592105E-5</entry>
+                     <entry index="3">2.3729400615600327E-5</entry>
+                     <entry index="4">3.378076713791803E-5</entry>
+                     <entry index="5">4.549081888061762E-5</entry>
+                     <entry index="6">5.911147170990236E-5</entry>
+                     <entry index="7">7.492913906872732E-5</entry>
+                     <entry index="8">9.326884459658644E-5</entry>
+                     <entry index="9">1.1449873163372097E-4</entry>
+                     <entry index="10">1.3903499439050994E-4</entry>
+                     <entry index="11">1.6734725515736172E-4</entry>
+                     <entry index="12">1.999644111673927E-4</entry>
+                     <entry index="13">2.3748097355775442E-4</entry>
+                     <entry index="14">2.805639192589223E-4</entry>
+                     <entry index="15">3.2996007452758155E-4</entry>
+                     <entry index="16">3.8650404618141684E-4</entry>
+                     <entry index="17">4.511267133479774E-4</entry>
+                     <entry index="18">5.248642886620216E-4</entry>
+                     <entry index="19">6.088679532969409E-4</entry>
+                     <entry index="20">7.044140649612008E-4</entry>
+                     <entry index="21">8.129149320012438E-4</entry>
+                     <entry index="22">9.359301400061776E-4</entry>
+                     <entry index="23">0.001075178409793578</entry>
+                     <entry index="24">0.0012325499573665993</entry>
+                     <entry index="25">0.0014101193173784296</entry>
+                     <entry index="26">0.0016101585818418713</entry>
+                     <entry index="27">0.001835150995314567</entry>
+                     <entry index="28">0.002087804836624597</entry>
+                     <entry index="29">0.0023710675054439603</entry>
+                     <entry index="30">0.002688139719753407</entry>
+                     <entry index="31">0.0030424897175742273</entry>
+                     <entry index="32">0.0034378673433927698</entry>
+                     <entry index="33">0.0038783178866126614</entry>
+                     <entry index="34">0.004368195526298024</entry>
+                     <entry index="35">0.004912176223597173</entry>
+                     <entry index="36">0.005515269890756879</entry>
+                     <entry index="37">0.006182831653765442</entry>
+                     <entry index="38">0.006920572014626508</entry>
+                     <entry index="39">0.007734565709305539</entry>
+                     <entry index="40">0.008631259048757792</entry>
+                     <entry index="41">0.009617475523398334</entry>
+                     <entry index="42">0.010700419446171984</entry>
+                     <entry index="43">0.01188767740628454</entry>
+                     <entry index="44">0.013187217304921386</entry>
+                     <entry index="45">0.014607384746151</entry>
+                     <entry index="46">0.01615689656091923</entry>
+                     <entry index="47">0.017844831249795582</entry>
+                     <entry index="48">0.01968061614111925</entry>
+                     <entry index="49">0.02167401107556342</entry>
+                     <entry index="50">0.023835088446007312</entry>
+                     <entry index="51">0.026174209443051027</entry>
+                     <entry index="52">0.02870199638155551</entry>
+                     <entry index="53">0.03142930101221442</entry>
+                     <entry index="54">0.034367168754286505</entry>
+                     <entry index="55">0.03752679882109743</entry>
+                     <entry index="56">0.04091950024855805</entry>
+                     <entry index="57">0.044556643878479026</entry>
+                     <entry index="58">0.04844961039256205</entry>
+                     <entry index="59">0.05260973453922482</entry>
+                     <entry index="60">0.057048245743419636</entry>
+                     <entry index="61">0.06177620533882239</entry>
+                     <entry index="62">0.06680444071163595</entry>
+                     <entry index="63">0.07214347669515525</entry>
+                     <entry index="64">0.07780346460352527</entry>
+                     <entry index="65">0.08379410934109847</entry>
+                     <entry index="66">0.09012459506974846</entry>
+                     <entry index="67">0.09680350995969507</entry>
+                     <entry index="68">0.10383877058910655</entry>
+                     <entry index="69">0.11123754659324413</entry>
+                     <entry index="70">0.11900618619449757</entry>
+                     <entry index="71">0.12715014326965593</entry>
+                     <entry index="72">0.1356739066295404</entry>
+                     <entry index="73">0.14458093219812987</entry>
+                     <entry index="74">0.15387357878303792</entry>
+                     <entry index="75">0.1635530481262405</entry>
+                     <entry index="76">0.17361932991298676</entry>
+                     <entry index="77">0.18407115239763458</entry>
+                     <entry index="78">0.19490593927763225</entry>
+                     <entry index="79">0.20611977341103038</entry>
+                     <entry index="80">0.21770736792888867</entry>
+                     <entry index="81">0.22966204524199885</entry>
+                     <entry index="82">0.24197572438186524</entry>
+                     <entry index="83">0.25463891704937486</entry>
+                     <entry index="84">0.26764073267168004</entry>
+                     <entry index="85">0.2809688926892513</entry>
+                     <entry index="86">0.2946097542116844</entry>
+                     <entry index="87">0.3085483430936057</entry>
+                     <entry index="88">0.3227683963919403</entry>
+                     <entry index="89">0.33725241407398227</entry>
+                     <entry index="90">0.3519817197532744</entry>
+                     <entry index="91">0.366936530138458</entry>
+                     <entry index="92">0.3820960327901709</entry>
+                     <entry index="93">0.3974384716939655</entry>
+                     <entry index="94">0.41294124007424327</entry>
+                     <entry index="95">0.42858097979650095</entry>
+                     <entry index="96">0.44433368663382056</entry>
+                     <entry index="97">0.4601748206095046</entry>
+                     <entry index="98">0.4760794205719594</entry>
+                     <entry index="99">0.49202222211114954</entry>
+                     <entry index="100">0.5079777778888501</entry>
+                     <entry index="101">0.5239205794280403</entry>
+                     <entry index="102">0.5398251793904951</entry>
+                     <entry index="103">0.5556663133661792</entry>
+                     <entry index="104">0.5714190202034989</entry>
+                     <entry index="105">0.5870587599257566</entry>
+                     <entry index="106">0.6025615283060344</entry>
+                     <entry index="107">0.617903967209829</entry>
+                     <entry index="108">0.6330634698615419</entry>
+                     <entry index="109">0.6480182802467255</entry>
+                     <entry index="110">0.6627475859260177</entry>
+                     <entry index="111">0.6772316036080597</entry>
+                     <entry index="112">0.6914516569063943</entry>
+                     <entry index="113">0.7053902457883156</entry>
+                     <entry index="114">0.7190311073107487</entry>
+                     <entry index="115">0.73235926732832</entry>
+                     <entry index="116">0.7453610829506252</entry>
+                     <entry index="117">0.7580242756181348</entry>
+                     <entry index="118">0.7703379547580012</entry>
+                     <entry index="119">0.7822926320711113</entry>
+                     <entry index="120">0.7938802265889696</entry>
+                     <entry index="121">0.8050940607223678</entry>
+                     <entry index="122">0.8159288476023654</entry>
+                     <entry index="123">0.8263806700870132</entry>
+                     <entry index="124">0.8364469518737595</entry>
+                     <entry index="125">0.8461264212169621</entry>
+                     <entry index="126">0.8554190678018702</entry>
+                     <entry index="127">0.8643260933704596</entry>
+                     <entry index="128">0.8728498567303441</entry>
+                     <entry index="129">0.8809938138055025</entry>
+                     <entry index="130">0.8887624534067559</entry>
+                     <entry index="131">0.8961612294108934</entry>
+                     <entry index="132">0.9031964900403049</entry>
+                     <entry index="133">0.9098754049302515</entry>
+                     <entry index="134">0.9162058906589016</entry>
+                     <entry index="135">0.9221965353964747</entry>
+                     <entry index="136">0.9278565233048447</entry>
+                     <entry index="137">0.933195559288364</entry>
+                     <entry index="138">0.9382237946611776</entry>
+                     <entry index="139">0.9429517542565803</entry>
+                     <entry index="140">0.9473902654607751</entry>
+                     <entry index="141">0.9515503896074379</entry>
+                     <entry index="142">0.9554433561215209</entry>
+                     <entry index="143">0.9590804997514418</entry>
+                     <entry index="144">0.9624732011789024</entry>
+                     <entry index="145">0.9656328312457134</entry>
+                     <entry index="146">0.9685706989877855</entry>
+                     <entry index="147">0.9712980036184443</entry>
+                     <entry index="148">0.9738257905569487</entry>
+                     <entry index="149">0.9761649115539924</entry>
+                     <entry index="150">0.9783259889244363</entry>
+                     <entry index="151">0.9803193838588805</entry>
+                     <entry index="152">0.9821551687502041</entry>
+                     <entry index="153">0.9838431034390804</entry>
+                     <entry index="154">0.9853926152538487</entry>
+                     <entry index="155">0.9868127826950783</entry>
+                     <entry index="156">0.9881123225937152</entry>
+                     <entry index="157">0.9892995805538277</entry>
+                     <entry index="158">0.9903825244766014</entry>
+                     <entry index="159">0.9913687409512418</entry>
+                     <entry index="160">0.992265434290694</entry>
+                     <entry index="161">0.9930794279853731</entry>
+                     <entry index="162">0.9938171683462341</entry>
+                     <entry index="163">0.9944847301092427</entry>
+                     <entry index="164">0.9950878237764024</entry>
+                     <entry index="165">0.9956318044737015</entry>
+                     <entry index="166">0.9961216821133868</entry>
+                     <entry index="167">0.9965621326566066</entry>
+                     <entry index="168">0.9969575102824252</entry>
+                     <entry index="169">0.997311860280246</entry>
+                     <entry index="170">0.9976289324945554</entry>
+                     <entry index="171">0.9979121951633748</entry>
+                     <entry index="172">0.9981648490046848</entry>
+                     <entry index="173">0.9983898414181576</entry>
+                     <entry index="174">0.998589880682621</entry>
+                     <entry index="175">0.9987674500426328</entry>
+                     <entry index="176">0.9989248215902058</entry>
+                     <entry index="177">0.9990640698599932</entry>
+                     <entry index="178">0.9991870850679981</entry>
+                     <entry index="179">0.9992955859350382</entry>
+                     <entry index="180">0.9993911320467025</entry>
+                     <entry index="181">0.9994751357113374</entry>
+                     <entry index="182">0.9995488732866514</entry>
+                     <entry index="183">0.999613495953818</entry>
+                     <entry index="184">0.9996700399254719</entry>
+                     <entry index="185">0.9997194360807405</entry>
+                     <entry index="186">0.9997625190264418</entry>
+                     <entry index="187">0.9998000355888321</entry>
+                     <entry index="188">0.9998326527448421</entry>
+                     <entry index="189">0.999860965005609</entry>
+                     <entry index="190">0.9998855012683657</entry>
+                     <entry index="191">0.9999067311554029</entry>
+                     <entry index="192">0.9999250708609307</entry>
+                     <entry index="193">0.9999408885282896</entry>
+                     <entry index="194">0.9999545091811188</entry>
+                     <entry index="195">0.9999662192328616</entry>
+                     <entry index="196">0.9999762705993839</entry>
+                     <entry index="197">0.9999848844395836</entry>
+                     <entry index="198">0.9999922545486809</entry>
+                     <entry index="199">0.999998550428477</entry>
+                  </fun>
+                  <den length="201">
+                     <entry index="0">9.474323676695874E-4</entry>
+                     <entry index="1">0.001110044689870685</entry>
+                     <entry index="2">0.0012984876948722397</entry>
+                     <entry index="3">0.0015164927625392899</entry>
+                     <entry index="4">0.0017682675388717237</entry>
+                     <entry index="5">0.002058546756128143</entry>
+                     <entry index="6">0.00239264697893223</entry>
+                     <entry index="7">0.0027765253605530507</entry>
+                     <entry index="8">0.0032168424590087535</entry>
+                     <entry index="9">0.003721029121754166</entry>
+                     <entry index="10">0.0042973574000722955</entry>
+                     <entry index="11">0.00495501539955247</entry>
+                     <entry index="12">0.005704185910915171</entry>
+                     <entry index="13">0.006556128595738978</entry>
+                     <entry index="14">0.007523265424250521</entry>
+                     <entry index="15">0.008619268977272112</entry>
+                     <entry index="16">0.009859153131824401</entry>
+                     <entry index="17">0.011259365550058135</entry>
+                     <entry index="18">0.012837881284596835</entry>
+                     <entry index="19">0.014614296700670912</entry>
+                     <entry index="20">0.016609922797453238</entry>
+                     <entry index="21">0.01884787688883532</entry>
+                     <entry index="22">0.0213531714787901</entry>
+                     <entry index="23">0.024152799039968177</entry>
+                     <entry index="24">0.02727581127801266</entry>
+                     <entry index="25">0.030753391340232507</entry>
+                     <entry index="26">0.03461891730795108</entry>
+                     <entry index="27">0.03890801519946577</entry>
+                     <entry index="28">0.04365859960773359</entry>
+                     <entry index="29">0.04891090000643754</entry>
+                     <entry index="30">0.05470747068292421</entry>
+                     <entry index="31">0.0610931821996968</entry>
+                     <entry index="32">0.06811519225080728</entry>
+                     <entry index="33">0.07582289376876514</entry>
+                     <entry index="34">0.08426783815455596</entry>
+                     <entry index="35">0.09350363155104797</entry>
+                     <entry index="36">0.10358580216127422</entry>
+                     <entry index="37">0.11457163673041308</entry>
+                     <entry index="38">0.12651998446601387</entry>
+                     <entry index="39">0.13949102686700282</entry>
+                     <entry index="40">0.15354601216968103</entry>
+                     <entry index="41">0.16874695339912338</entry>
+                     <entry index="42">0.18515628933736383</entry>
+                     <entry index="43">0.2028365080850403</entry>
+                     <entry index="44">0.22184973329955007</entry>
+                     <entry index="45">0.24225727363823193</entry>
+                     <entry index="46">0.26411913641674545</entry>
+                     <entry index="47">0.28749350700689846</entry>
+                     <entry index="48">0.3124361960400517</entry>
+                     <entry index="49">0.3390000570462786</entry>
+                     <entry index="50">0.36723437773930645</entry>
+                     <entry index="51">0.39718424874556735</entry>
+                     <entry index="52">0.42888991416439465</entry>
+                     <entry index="53">0.4623861089267505</entry>
+                     <entry index="54">0.497701388482428</entry>
+                     <entry index="55">0.5348574568806215</entry>
+                     <entry index="56">0.573868499805854</entry>
+                     <entry index="57">0.6147405295800861</entry>
+                     <entry index="58">0.6574707495320131</entry>
+                     <entry index="59">0.7020469454558205</entry>
+                     <entry index="60">0.7484469121241831</entry>
+                     <entry index="61">0.7966379229747552</entry>
+                     <entry index="62">0.8465762511473264</entry>
+                     <entry index="63">0.8982067500027698</entry>
+                     <entry index="64">0.9514625010985469</entry>
+                     <entry index="65">1.0062645373240662</entry>
+                     <entry index="66">1.062521648509262</entry>
+                     <entry index="67">1.120130276309893</entry>
+                     <entry index="68">1.1789745045435318</entry>
+                     <entry index="69">1.2389261504033884</entry>
+                     <entry index="70">1.2998449611173468</entry>
+                     <entry index="71">1.3615789196533585</entry>
+                     <entry index="72">1.423964662008232</entry>
+                     <entry index="73">1.4868280074654527</entry>
+                     <entry index="74">1.549984601981624</entry>
+                     <entry index="75">1.6132406735747749</entry>
+                     <entry index="76">1.6763938972573347</entry>
+                     <entry index="77">1.7392343656994682</entry>
+                     <entry index="78">1.8015456604435585</entry>
+                     <entry index="79">1.8631060171375347</entry>
+                     <entry index="80">1.9236895769338023</entry>
+                     <entry index="81">1.9830677149322653</entry>
+                     <entry index="82">2.0410104353508713</entry>
+                     <entry index="83">2.0972878220052182</entry>
+                     <entry index="84">2.1516715316892836</entry>
+                     <entry index="85">2.203936317190217</entry>
+                     <entry index="86">2.253861565957864</entry>
+                     <entry index="87">2.3012328398987583</entry>
+                     <entry index="88">2.345843401387073</entry>
+                     <entry index="89">2.3874957103913377</entry>
+                     <entry index="90">2.4260028776126403</entry>
+                     <entry index="91">2.4611900587218605</entry>
+                     <entry index="92">2.4928957751712435</entry>
+                     <entry index="93">2.520973147637452</entry>
+                     <entry index="94">2.5452910289239052</entry>
+                     <entry index="95">2.5657350241014822</entry>
+                     <entry index="96">2.582208386787287</entry>
+                     <entry index="97">2.594632781736916</entry>
+                     <entry index="98">2.6029489053398147</entry>
+                     <entry index="99">2.607116957140615</entry>
+                     <entry index="100">2.607116957140615</entry>
+                     <entry index="101">2.6029489053398156</entry>
+                     <entry index="102">2.594632781736917</entry>
+                     <entry index="103">2.5822083867872885</entry>
+                     <entry index="104">2.5657350241014836</entry>
+                     <entry index="105">2.545291028923907</entry>
+                     <entry index="106">2.520973147637454</entry>
+                     <entry index="107">2.4928957751712453</entry>
+                     <entry index="108">2.4611900587218623</entry>
+                     <entry index="109">2.4260028776126425</entry>
+                     <entry index="110">2.38749571039134</entry>
+                     <entry index="111">2.3458434013870746</entry>
+                     <entry index="112">2.3012328398987605</entry>
+                     <entry index="113">2.2538615659578665</entry>
+                     <entry index="114">2.2039363171902187</entry>
+                     <entry index="115">2.1516715316892854</entry>
+                     <entry index="116">2.09728782200522</entry>
+                     <entry index="117">2.0410104353508727</entry>
+                     <entry index="118">1.9830677149322666</entry>
+                     <entry index="119">1.923689576933803</entry>
+                     <entry index="120">1.8631060171375349</entry>
+                     <entry index="121">1.8015456604435587</entry>
+                     <entry index="122">1.7392343656994682</entry>
+                     <entry index="123">1.6763938972573345</entry>
+                     <entry index="124">1.6132406735747742</entry>
+                     <entry index="125">1.5499846019816232</entry>
+                     <entry index="126">1.4868280074654523</entry>
+                     <entry index="127">1.4239646620082311</entry>
+                     <entry index="128">1.3615789196533579</entry>
+                     <entry index="129">1.2998449611173455</entry>
+                     <entry index="130">1.2389261504033873</entry>
+                     <entry index="131">1.1789745045435305</entry>
+                     <entry index="132">1.1201302763098917</entry>
+                     <entry index="133">1.0625216485092603</entry>
+                     <entry index="134">1.0062645373240644</entry>
+                     <entry index="135">0.9514625010985451</entry>
+                     <entry index="136">0.8982067500027681</entry>
+                     <entry index="137">0.8465762511473245</entry>
+                     <entry index="138">0.7966379229747532</entry>
+                     <entry index="139">0.7484469121241815</entry>
+                     <entry index="140">0.7020469454558182</entry>
+                     <entry index="141">0.6574707495320112</entry>
+                     <entry index="142">0.6147405295800843</entry>
+                     <entry index="143">0.573868499805852</entry>
+                     <entry index="144">0.5348574568806194</entry>
+                     <entry index="145">0.49770138848242595</entry>
+                     <entry index="146">0.46238610892674864</entry>
+                     <entry index="147">0.42888991416439265</entry>
+                     <entry index="148">0.39718424874556535</entry>
+                     <entry index="149">0.3672343777393047</entry>
+                     <entry index="150">0.33900005704627645</entry>
+                     <entry index="151">0.31243619604004963</entry>
+                     <entry index="152">0.2874935070068965</entry>
+                     <entry index="153">0.26411913641674367</entry>
+                     <entry index="154">0.24225727363823052</entry>
+                     <entry index="155">0.22184973329954846</entry>
+                     <entry index="156">0.20283650808503897</entry>
+                     <entry index="157">0.18515628933736228</entry>
+                     <entry index="158">0.16874695339912182</entry>
+                     <entry index="159">0.15354601216967972</entry>
+                     <entry index="160">0.13949102686700157</entry>
+                     <entry index="161">0.12651998446601279</entry>
+                     <entry index="162">0.11457163673041207</entry>
+                     <entry index="163">0.10358580216127315</entry>
+                     <entry index="164">0.09350363155104705</entry>
+                     <entry index="165">0.08426783815455499</entry>
+                     <entry index="166">0.07582289376876422</entry>
+                     <entry index="167">0.06811519225080646</entry>
+                     <entry index="168">0.061093182199695985</entry>
+                     <entry index="169">0.054707470682923455</entry>
+                     <entry index="170">0.04891090000643686</entry>
+                     <entry index="171">0.04365859960773298</entry>
+                     <entry index="172">0.03890801519946511</entry>
+                     <entry index="173">0.0346189173079505</entry>
+                     <entry index="174">0.030753391340231983</entry>
+                     <entry index="175">0.027275811278012197</entry>
+                     <entry index="176">0.024152799039967705</entry>
+                     <entry index="177">0.021353171478789665</entry>
+                     <entry index="178">0.018847876888834953</entry>
+                     <entry index="179">0.016609922797452915</entry>
+                     <entry index="180">0.014614296700670574</entry>
+                     <entry index="181">0.012837881284596526</entry>
+                     <entry index="182">0.011259365550057856</entry>
+                     <entry index="183">0.009859153131824165</entry>
+                     <entry index="184">0.008619268977271883</entry>
+                     <entry index="185">0.00752326542425034</entry>
+                     <entry index="186">0.006556128595738798</entry>
+                     <entry index="187">0.005704185910915024</entry>
+                     <entry index="188">0.00495501539955233</entry>
+                     <entry index="189">0.00429735740007218</entry>
+                     <entry index="190">0.0037210291217540568</entry>
+                     <entry index="191">0.0032168424590086706</entry>
+                     <entry index="192">0.002776525360552967</entry>
+                     <entry index="193">0.0023926469789321662</entry>
+                     <entry index="194">0.002058546756128081</entry>
+                     <entry index="195">0.0017682675388716734</entry>
+                     <entry index="196">0.001516492762539243</entry>
+                     <entry index="197">0.0012984876948722015</entry>
+                     <entry index="198">0.0011100446898706505</entry>
+                     <entry index="199">9.474323676695613E-4</entry>
+                     <entry index="200">0.0</entry>
+                  </den>
+               </j-random>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="90">
+            <keys length="3" ref-id="91">
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Integer" ref="73"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="92" d-value="0.3"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="93">
+            <keys length="3" ref-id="94">
+               <key class="java.lang.Long" ref-id="95">5</key>
+               <key class="java.lang.Long" ref="78"/>
+               <key class="java.lang.Integer" ref="79"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="96">
+            <f-value class="fuzzylib.core.TriangularFuzzyNumber" ref-id="97" type="triangular" left-bottom="0.209" right-bottom="0.325" top="0.267"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="98">
+            <keys length="3" ref-id="99">
+               <key class="java.lang.Long" ref-id="100">3</key>
+               <key class="java.lang.Long" ref="64"/>
+               <key class="java.lang.Integer" ref="65"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="101">
+            <r-value ref-id="102">
+               <j-params ref-id="103" type="4" lr-flag="false">
+                  <data length="1" ref-id="104">
+                     <double>0.3</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="105" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="0.3" right-double="0.3" h-double="0.0" average-double="0.3" dispersion-double="0.0" mode-double="0.3"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="106">
+            <keys length="3" ref-id="107">
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Integer" ref="73"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="108" d-value="0.4"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="109">
+            <keys length="3" ref-id="110">
+               <key class="java.lang.Long" ref-id="111">2</key>
+               <key class="java.lang.Long" ref="78"/>
+               <key class="java.lang.Integer" ref="79"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="112">
+            <f-value class="fuzzylib.core.TriangularFuzzyNumber" ref-id="113" type="triangular" left-bottom="0.052" right-bottom="0.282" top="0.167"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="114">
+            <keys length="3" ref-id="115">
+               <key class="java.lang.Long" ref-id="116">2</key>
+               <key class="java.lang.Long" ref="64"/>
+               <key class="java.lang.Integer" ref="65"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="117">
+            <r-value ref-id="118">
+               <j-params ref-id="119" type="1" lr-flag="false">
+                  <data length="2" ref-id="120">
+                     <double>0.167</double>
+                     <double>0.115</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="121" n="200" set-flag-int="1" set-flag-bool="false" delta-flag="false" left-double="-0.29300000000000004" right-double="0.627" h-double="0.0046" average-double="0.16699999999999968" dispersion-double="0.013212921982562735" mode-double="0.16929999999999995">
+                  <fun length="200">
+                     <entry index="0">1.4495715225344684E-6</entry>
+                     <entry index="1">7.745451318607682E-6</entry>
+                     <entry index="2">1.5115560415921006E-5</entry>
+                     <entry index="3">2.3729400615600253E-5</entry>
+                     <entry index="4">3.378076713791792E-5</entry>
+                     <entry index="5">4.549081888061745E-5</entry>
+                     <entry index="6">5.911147170990211E-5</entry>
+                     <entry index="7">7.492913906872697E-5</entry>
+                     <entry index="8">9.326884459658598E-5</entry>
+                     <entry index="9">1.1449873163372036E-4</entry>
+                     <entry index="10">1.3903499439050913E-4</entry>
+                     <entry index="11">1.673472551573607E-4</entry>
+                     <entry index="12">1.999644111673914E-4</entry>
+                     <entry index="13">2.3748097355775274E-4</entry>
+                     <entry index="14">2.805639192589202E-4</entry>
+                     <entry index="15">3.2996007452757895E-4</entry>
+                     <entry index="16">3.8650404618141375E-4</entry>
+                     <entry index="17">4.511267133479737E-4</entry>
+                     <entry index="18">5.248642886620171E-4</entry>
+                     <entry index="19">6.088679532969356E-4</entry>
+                     <entry index="20">7.044140649611946E-4</entry>
+                     <entry index="21">8.129149320012367E-4</entry>
+                     <entry index="22">9.359301400061694E-4</entry>
+                     <entry index="23">0.0010751784097935684</entry>
+                     <entry index="24">0.0012325499573665885</entry>
+                     <entry index="25">0.0014101193173784172</entry>
+                     <entry index="26">0.0016101585818418575</entry>
+                     <entry index="27">0.001835150995314551</entry>
+                     <entry index="28">0.002087804836624579</entry>
+                     <entry index="29">0.0023710675054439403</entry>
+                     <entry index="30">0.002688139719753385</entry>
+                     <entry index="31">0.003042489717574202</entry>
+                     <entry index="32">0.0034378673433927416</entry>
+                     <entry index="33">0.0038783178866126297</entry>
+                     <entry index="34">0.004368195526297989</entry>
+                     <entry index="35">0.004912176223597133</entry>
+                     <entry index="36">0.005515269890756834</entry>
+                     <entry index="37">0.006182831653765392</entry>
+                     <entry index="38">0.0069205720146264535</entry>
+                     <entry index="39">0.0077345657093054795</entry>
+                     <entry index="40">0.008631259048757726</entry>
+                     <entry index="41">0.009617475523398259</entry>
+                     <entry index="42">0.0107004194461719</entry>
+                     <entry index="43">0.011887677406284448</entry>
+                     <entry index="44">0.013187217304921285</entry>
+                     <entry index="45">0.014607384746150889</entry>
+                     <entry index="46">0.016156896560919107</entry>
+                     <entry index="47">0.017844831249795443</entry>
+                     <entry index="48">0.019680616141119094</entry>
+                     <entry index="49">0.021674011075563247</entry>
+                     <entry index="50">0.02383508844600712</entry>
+                     <entry index="51">0.02617420944305082</entry>
+                     <entry index="52">0.028701996381555284</entry>
+                     <entry index="53">0.03142930101221417</entry>
+                     <entry index="54">0.034367168754286234</entry>
+                     <entry index="55">0.03752679882109714</entry>
+                     <entry index="56">0.040919500248557734</entry>
+                     <entry index="57">0.044556643878478686</entry>
+                     <entry index="58">0.04844961039256168</entry>
+                     <entry index="59">0.05260973453922443</entry>
+                     <entry index="60">0.05704824574341921</entry>
+                     <entry index="61">0.06177620533882193</entry>
+                     <entry index="62">0.06680444071163547</entry>
+                     <entry index="63">0.07214347669515472</entry>
+                     <entry index="64">0.07780346460352472</entry>
+                     <entry index="65">0.08379410934109788</entry>
+                     <entry index="66">0.09012459506974782</entry>
+                     <entry index="67">0.0968035099596944</entry>
+                     <entry index="68">0.10383877058910584</entry>
+                     <entry index="69">0.11123754659324338</entry>
+                     <entry index="70">0.11900618619449678</entry>
+                     <entry index="71">0.1271501432696551</entry>
+                     <entry index="72">0.13567390662953951</entry>
+                     <entry index="73">0.14458093219812895</entry>
+                     <entry index="74">0.15387357878303695</entry>
+                     <entry index="75">0.1635530481262395</entry>
+                     <entry index="76">0.1736193299129857</entry>
+                     <entry index="77">0.18407115239763347</entry>
+                     <entry index="78">0.19490593927763109</entry>
+                     <entry index="79">0.2061197734110292</entry>
+                     <entry index="80">0.21770736792888742</entry>
+                     <entry index="81">0.22966204524199754</entry>
+                     <entry index="82">0.2419757243818639</entry>
+                     <entry index="83">0.25463891704937347</entry>
+                     <entry index="84">0.2676407326716786</entry>
+                     <entry index="85">0.2809688926892498</entry>
+                     <entry index="86">0.2946097542116829</entry>
+                     <entry index="87">0.3085483430936041</entry>
+                     <entry index="88">0.3227683963919387</entry>
+                     <entry index="89">0.3372524140739806</entry>
+                     <entry index="90">0.35198171975327275</entry>
+                     <entry index="91">0.3669365301384563</entry>
+                     <entry index="92">0.3820960327901691</entry>
+                     <entry index="93">0.3974384716939637</entry>
+                     <entry index="94">0.4129412400742414</entry>
+                     <entry index="95">0.428580979796499</entry>
+                     <entry index="96">0.4443336866338186</entry>
+                     <entry index="97">0.46017482060950265</entry>
+                     <entry index="98">0.4760794205719574</entry>
+                     <entry index="99">0.4920222221111475</entry>
+                     <entry index="100">0.507977777888848</entry>
+                     <entry index="101">0.5239205794280382</entry>
+                     <entry index="102">0.5398251793904929</entry>
+                     <entry index="103">0.555666313366177</entry>
+                     <entry index="104">0.5714190202034967</entry>
+                     <entry index="105">0.5870587599257543</entry>
+                     <entry index="106">0.602561528306032</entry>
+                     <entry index="107">0.6179039672098267</entry>
+                     <entry index="108">0.6330634698615396</entry>
+                     <entry index="109">0.6480182802467231</entry>
+                     <entry index="110">0.6627475859260153</entry>
+                     <entry index="111">0.6772316036080573</entry>
+                     <entry index="112">0.691451656906392</entry>
+                     <entry index="113">0.7053902457883132</entry>
+                     <entry index="114">0.7190311073107464</entry>
+                     <entry index="115">0.7323592673283177</entry>
+                     <entry index="116">0.7453610829506229</entry>
+                     <entry index="117">0.7580242756181326</entry>
+                     <entry index="118">0.770337954757999</entry>
+                     <entry index="119">0.7822926320711092</entry>
+                     <entry index="120">0.7938802265889675</entry>
+                     <entry index="121">0.8050940607223657</entry>
+                     <entry index="122">0.8159288476023634</entry>
+                     <entry index="123">0.8263806700870112</entry>
+                     <entry index="124">0.8364469518737575</entry>
+                     <entry index="125">0.8461264212169601</entry>
+                     <entry index="126">0.8554190678018683</entry>
+                     <entry index="127">0.8643260933704577</entry>
+                     <entry index="128">0.8728498567303422</entry>
+                     <entry index="129">0.8809938138055006</entry>
+                     <entry index="130">0.8887624534067541</entry>
+                     <entry index="131">0.8961612294108917</entry>
+                     <entry index="132">0.9031964900403032</entry>
+                     <entry index="133">0.9098754049302499</entry>
+                     <entry index="134">0.9162058906588999</entry>
+                     <entry index="135">0.9221965353964732</entry>
+                     <entry index="136">0.9278565233048433</entry>
+                     <entry index="137">0.9331955592883626</entry>
+                     <entry index="138">0.9382237946611762</entry>
+                     <entry index="139">0.9429517542565791</entry>
+                     <entry index="140">0.9473902654607739</entry>
+                     <entry index="141">0.9515503896074367</entry>
+                     <entry index="142">0.9554433561215198</entry>
+                     <entry index="143">0.9590804997514408</entry>
+                     <entry index="144">0.9624732011789014</entry>
+                     <entry index="145">0.9656328312457124</entry>
+                     <entry index="146">0.9685706989877846</entry>
+                     <entry index="147">0.9712980036184435</entry>
+                     <entry index="148">0.9738257905569481</entry>
+                     <entry index="149">0.9761649115539918</entry>
+                     <entry index="150">0.9783259889244357</entry>
+                     <entry index="151">0.9803193838588798</entry>
+                     <entry index="152">0.9821551687502036</entry>
+                     <entry index="153">0.98384310343908</entry>
+                     <entry index="154">0.9853926152538482</entry>
+                     <entry index="155">0.9868127826950779</entry>
+                     <entry index="156">0.9881123225937147</entry>
+                     <entry index="157">0.9892995805538273</entry>
+                     <entry index="158">0.9903825244766009</entry>
+                     <entry index="159">0.9913687409512415</entry>
+                     <entry index="160">0.9922654342906938</entry>
+                     <entry index="161">0.9930794279853729</entry>
+                     <entry index="162">0.9938171683462339</entry>
+                     <entry index="163">0.9944847301092424</entry>
+                     <entry index="164">0.9950878237764021</entry>
+                     <entry index="165">0.9956318044737013</entry>
+                     <entry index="166">0.9961216821133866</entry>
+                     <entry index="167">0.9965621326566065</entry>
+                     <entry index="168">0.9969575102824251</entry>
+                     <entry index="169">0.9973118602802459</entry>
+                     <entry index="170">0.9976289324945553</entry>
+                     <entry index="171">0.9979121951633747</entry>
+                     <entry index="172">0.9981648490046847</entry>
+                     <entry index="173">0.9983898414181575</entry>
+                     <entry index="174">0.9985898806826209</entry>
+                     <entry index="175">0.9987674500426327</entry>
+                     <entry index="176">0.9989248215902057</entry>
+                     <entry index="177">0.9990640698599931</entry>
+                     <entry index="178">0.999187085067998</entry>
+                     <entry index="179">0.9992955859350381</entry>
+                     <entry index="180">0.9993911320467024</entry>
+                     <entry index="181">0.9994751357113373</entry>
+                     <entry index="182">0.9995488732866513</entry>
+                     <entry index="183">0.9996134959538179</entry>
+                     <entry index="184">0.9996700399254718</entry>
+                     <entry index="185">0.9997194360807404</entry>
+                     <entry index="186">0.9997625190264416</entry>
+                     <entry index="187">0.999800035588832</entry>
+                     <entry index="188">0.999832652744842</entry>
+                     <entry index="189">0.9998609650056088</entry>
+                     <entry index="190">0.9998855012683656</entry>
+                     <entry index="191">0.9999067311554027</entry>
+                     <entry index="192">0.9999250708609306</entry>
+                     <entry index="193">0.9999408885282894</entry>
+                     <entry index="194">0.9999545091811187</entry>
+                     <entry index="195">0.9999662192328614</entry>
+                     <entry index="196">0.9999762705993838</entry>
+                     <entry index="197">0.9999848844395834</entry>
+                     <entry index="198">0.9999922545486808</entry>
+                     <entry index="199">0.9999985504284769</entry>
+                  </fun>
+                  <den length="201">
+                     <entry index="0">0.001260496976116929</entry>
+                     <entry index="1">0.0014768420656540336</entry>
+                     <entry index="2">0.0017275531940474113</entry>
+                     <entry index="3">0.00201759471885661</entry>
+                     <entry index="4">0.00235256463867281</entry>
+                     <entry index="5">0.002738762205979159</entry>
+                     <entry index="6">0.0031832607632750424</entry>
+                     <entry index="7">0.003693985914474895</entry>
+                     <entry index="8">0.004279799097637717</entry>
+                     <entry index="9">0.004950586570681581</entry>
+                     <entry index="10">0.0057173537583570175</entry>
+                     <entry index="11">0.006592324835926266</entry>
+                     <entry index="12">0.0075890473423479606</entry>
+                     <entry index="13">0.008722501523026532</entry>
+                     <entry index="14">0.010009213999220177</entry>
+                     <entry index="15">0.011467375248022762</entry>
+                     <entry index="16">0.013116960253644535</entry>
+                     <entry index="17">0.014979851557903268</entry>
+                     <entry index="18">0.017079963796028646</entry>
+                     <entry index="19">0.019443368653935873</entry>
+                     <entry index="20">0.02209841902617676</entry>
+                     <entry index="21">0.025075870991232853</entry>
+                     <entry index="22">0.028409002054390054</entry>
+                     <entry index="23">0.032133723940131254</entry>
+                     <entry index="24">0.03628868804813832</entry>
+                     <entry index="25">0.040915381522222044</entry>
+                     <entry index="26">0.04605821172275198</entry>
+                     <entry index="27">0.051764576743636555</entry>
+                     <entry index="28">0.05808491947811472</entry>
+                     <entry index="29">0.06507276261725983</entry>
+                     <entry index="30">0.07278472186510736</entry>
+                     <entry index="31">0.0812804945787263</entry>
+                     <entry index="32">0.0906228209945517</entry>
+                     <entry index="33">0.10087741518800844</entry>
+                     <entry index="34">0.11211286293606071</entry>
+                     <entry index="35">0.12440048371574117</entry>
+                     <entry index="36">0.13781415417978116</entry>
+                     <entry index="37">0.15243009060654847</entry>
+                     <entry index="38">0.16832658802869566</entry>
+                     <entry index="39">0.1855837140056633</entry>
+                     <entry index="40">0.20428295532140042</entry>
+                     <entry index="41">0.2245068162614403</entry>
+                     <entry index="42">0.2463383675531866</entry>
+                     <entry index="43">0.26986074553922546</entry>
+                     <entry index="44">0.295156601694182</entry>
+                     <entry index="45">0.3223075031882539</entry>
+                     <entry index="46">0.35139328584140644</entry>
+                     <entry index="47">0.38249136149613117</entry>
+                     <entry index="48">0.4156759825576304</entry>
+                     <entry index="49">0.45101746720069735</entry>
+                     <entry index="50">0.4885813895140303</entry>
+                     <entry index="51">0.5284277396354031</entry>
+                     <entry index="52">0.5706100597143643</entry>
+                     <entry index="53">0.6151745623112375</entry>
+                     <entry index="54">0.6621592385896605</entry>
+                     <entry index="55">0.7115929643716044</entry>
+                     <entry index="56">0.7634946127851743</entry>
+                     <entry index="57">0.817872182832631</entry>
+                     <entry index="58">0.8747219537251941</entry>
+                     <entry index="59">0.9340276752586072</entry>
+                     <entry index="60">0.9957598048260805</entry>
+                     <entry index="61">1.0598748018707544</entry>
+                     <entry index="62">1.1263144906568707</entry>
+                     <entry index="63">1.1950055021775903</entry>
+                     <entry index="64">1.265858805809364</entry>
+                     <entry index="65">1.3387693409615755</entry>
+                     <entry index="66">1.4136157584514446</entry>
+                     <entry index="67">1.4902602806557625</entry>
+                     <entry index="68">1.5685486886535598</entry>
+                     <entry index="69">1.6483104435801514</entry>
+                     <entry index="70">1.7293589482691563</entry>
+                     <entry index="71">1.811491953973589</entry>
+                     <entry index="72">1.894492115541377</entry>
+                     <entry index="73">1.9781276968888102</entry>
+                     <entry index="74">2.0621534269842376</entry>
+                     <entry index="75">2.1463115048429504</entry>
+                     <entry index="76">2.230332750264096</entry>
+                     <entry index="77">2.3139378952349343</entry>
+                     <entry index="78">2.3968390091118543</entry>
+                     <entry index="79">2.478741048887318</entry>
+                     <entry index="80">2.559343524094526</entry>
+                     <entry index="81">2.638342264214221</entry>
+                     <entry index="82">2.7154312748581053</entry>
+                     <entry index="83">2.790304667537367</entry>
+                     <entry index="84">2.862658646508341</entry>
+                     <entry index="85">2.9321935350443655</entry>
+                     <entry index="86">2.998615822535235</entry>
+                     <entry index="87">3.0616402130826854</entry>
+                     <entry index="88">3.120991655758444</entry>
+                     <entry index="89">3.176407336433683</entry>
+                     <entry index="90">3.227638611084634</entry>
+                     <entry index="91">3.274452860734292</entry>
+                     <entry index="92">3.31663524870608</entry>
+                     <entry index="93">3.3539903616393842</entry>
+                     <entry index="94">3.386343716742231</entry>
+                     <entry index="95">3.413543119021964</entry>
+                     <entry index="96">3.4354598537256873</entry>
+                     <entry index="97">3.451989700919542</entry>
+                     <entry index="98">3.4630537610173118</entry>
+                     <entry index="99">3.4685990821088115</entry>
+                     <entry index="100">3.4685990821088124</entry>
+                     <entry index="101">3.4630537610173135</entry>
+                     <entry index="102">3.451989700919545</entry>
+                     <entry index="103">3.4354598537256913</entry>
+                     <entry index="104">3.41354311902197</entry>
+                     <entry index="105">3.386343716742238</entry>
+                     <entry index="106">3.3539903616393922</entry>
+                     <entry index="107">3.316635248706089</entry>
+                     <entry index="108">3.2744528607343026</entry>
+                     <entry index="109">3.2276386110846453</entry>
+                     <entry index="110">3.176407336433695</entry>
+                     <entry index="111">3.120991655758457</entry>
+                     <entry index="112">3.0616402130826996</entry>
+                     <entry index="113">2.9986158225352497</entry>
+                     <entry index="114">2.9321935350443806</entry>
+                     <entry index="115">2.862658646508357</entry>
+                     <entry index="116">2.790304667537384</entry>
+                     <entry index="117">2.715431274858123</entry>
+                     <entry index="118">2.6383422642142387</entry>
+                     <entry index="119">2.5593435240945444</entry>
+                     <entry index="120">2.4787410488873363</entry>
+                     <entry index="121">2.396839009111872</entry>
+                     <entry index="122">2.313937895234953</entry>
+                     <entry index="123">2.2303327502641146</entry>
+                     <entry index="124">2.1463115048429695</entry>
+                     <entry index="125">2.0621534269842567</entry>
+                     <entry index="126">1.978127696888829</entry>
+                     <entry index="127">1.8944921155413965</entry>
+                     <entry index="128">1.8114919539736083</entry>
+                     <entry index="129">1.7293589482691756</entry>
+                     <entry index="130">1.64831044358017</entry>
+                     <entry index="131">1.5685486886535787</entry>
+                     <entry index="132">1.4902602806557808</entry>
+                     <entry index="133">1.4136157584514628</entry>
+                     <entry index="134">1.3387693409615937</entry>
+                     <entry index="135">1.2658588058093811</entry>
+                     <entry index="136">1.1950055021776076</entry>
+                     <entry index="137">1.1263144906568874</entry>
+                     <entry index="138">1.0598748018707709</entry>
+                     <entry index="139">0.9957598048260964</entry>
+                     <entry index="140">0.9340276752586221</entry>
+                     <entry index="141">0.874721953725209</entry>
+                     <entry index="142">0.8178721828326448</entry>
+                     <entry index="143">0.7634946127851878</entry>
+                     <entry index="144">0.7115929643716173</entry>
+                     <entry index="145">0.662159238589673</entry>
+                     <entry index="146">0.6151745623112496</entry>
+                     <entry index="147">0.5706100597143756</entry>
+                     <entry index="148">0.5284277396354138</entry>
+                     <entry index="149">0.4885813895140404</entry>
+                     <entry index="150">0.45101746720070696</entry>
+                     <entry index="151">0.41567598255763966</entry>
+                     <entry index="152">0.3824913614961397</entry>
+                     <entry index="153">0.3513932858414144</entry>
+                     <entry index="154">0.3223075031882614</entry>
+                     <entry index="155">0.29515660169418895</entry>
+                     <entry index="156">0.2698607455392319</entry>
+                     <entry index="157">0.2463383675531926</entry>
+                     <entry index="158">0.224506816261446</entry>
+                     <entry index="159">0.2042829553214054</entry>
+                     <entry index="160">0.18558371400566806</entry>
+                     <entry index="161">0.16832658802870012</entry>
+                     <entry index="162">0.15243009060655255</entry>
+                     <entry index="163">0.1378141541797849</entry>
+                     <entry index="164">0.12440048371574458</entry>
+                     <entry index="165">0.11211286293606383</entry>
+                     <entry index="166">0.1008774151880113</entry>
+                     <entry index="167">0.09062282099455432</entry>
+                     <entry index="168">0.08128049457872868</entry>
+                     <entry index="169">0.07278472186510954</entry>
+                     <entry index="170">0.06507276261726178</entry>
+                     <entry index="171">0.05808491947811646</entry>
+                     <entry index="172">0.051764576743638165</entry>
+                     <entry index="173">0.04605821172275325</entry>
+                     <entry index="174">0.04091538152222324</entry>
+                     <entry index="175">0.03628868804813932</entry>
+                     <entry index="176">0.03213372394013211</entry>
+                     <entry index="177">0.028409002054390734</entry>
+                     <entry index="178">0.025075870991233453</entry>
+                     <entry index="179">0.02209841902617723</entry>
+                     <entry index="180">0.01944336865393629</entry>
+                     <entry index="181">0.017079963796028982</entry>
+                     <entry index="182">0.014979851557903547</entry>
+                     <entry index="183">0.013116960253644743</entry>
+                     <entry index="184">0.011467375248022946</entry>
+                     <entry index="185">0.010009213999220319</entry>
+                     <entry index="186">0.008722501523026656</entry>
+                     <entry index="187">0.007589047342348034</entry>
+                     <entry index="188">0.006592324835926324</entry>
+                     <entry index="189">0.0057173537583570634</entry>
+                     <entry index="190">0.004950586570681621</entry>
+                     <entry index="191">0.004279799097637732</entry>
+                     <entry index="192">0.0036939859144749084</entry>
+                     <entry index="193">0.0031832607632750424</entry>
+                     <entry index="194">0.002738762205979159</entry>
+                     <entry index="195">0.0023525646386727997</entry>
+                     <entry index="196">0.0020175947188566024</entry>
+                     <entry index="197">0.001727553194047399</entry>
+                     <entry index="198">0.0014768420656540231</entry>
+                     <entry index="199">0.0012604969761169167</entry>
+                     <entry index="200">0.0</entry>
+                  </den>
+               </j-random>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="122">
+            <keys length="3" ref-id="123">
+               <key class="java.lang.Long" ref="27"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Integer" ref="73"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="124" d-value="0.2"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="125">
+            <keys length="3" ref-id="126">
+               <key class="java.lang.Long" ref-id="127">3</key>
+               <key class="java.lang.Long" ref="78"/>
+               <key class="java.lang.Integer" ref="79"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="128">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="129" type="singleton" top="0.3"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="130">
+            <keys length="3" ref-id="131">
+               <key class="java.lang.Long" ref-id="132">3</key>
+               <key class="java.lang.Long" ref="55"/>
+               <key class="java.lang.Integer" ref="56"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="133" d-value="0.3"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="134">
+            <keys length="3" ref-id="135">
+               <key class="java.lang.Long" ref-id="136">2</key>
+               <key class="java.lang.Long" ref="55"/>
+               <key class="java.lang.Integer" ref="56"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="137" d-value="0.1"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="138">
+            <keys length="3" ref-id="139">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref-id="140">8</key>
+               <key class="java.lang.Integer" ref="79"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="141">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="142" type="singleton" top="0.3"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="143">
+            <keys length="3" ref-id="144">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="140"/>
+               <key class="java.lang.Integer" ref="79"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="145">
+            <f-value class="fuzzylib.core.TriangularFuzzyNumber" ref-id="146" type="triangular" left-bottom="0.052" right-bottom="0.282" top="0.167"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="147">
+            <keys length="3" ref-id="148">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="140"/>
+               <key class="java.lang.Integer" ref="79"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="149">
+            <f-value class="fuzzylib.core.TriangularFuzzyNumber" ref-id="150" type="triangular" left-bottom="0.209" right-bottom="0.325" top="0.267"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="151">
+            <keys length="3" ref-id="152">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="140"/>
+               <key class="java.lang.Integer" ref="79"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="153">
+            <f-value class="fuzzylib.core.TriangularFuzzyNumber" ref-id="154" type="triangular" left-bottom="0.114" right-bottom="0.42" top="0.267"/>
+         </value>
+      </entry>
+   </weights-pool>
+   <matrix-weights-pool ref-id="155">
+      <entry>
+         <multi-key ref-id="156">
+            <keys length="3" ref-id="157">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="127"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="158" d-value="0.3333333333333333"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="159">
+            <keys length="3" ref-id="160">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="127"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="161" d-value="3.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="162">
+            <keys length="3" ref-id="163">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="127"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="164" d-value="0.5"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="165">
+            <keys length="3" ref-id="166">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="127"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="167" d-value="0.5"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="168">
+            <keys length="3" ref-id="169">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="127"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="170" d-value="0.25"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="171">
+            <keys length="3" ref-id="172">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="127"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="173" d-value="2.0"/>
+      </entry>
+   </matrix-weights-pool>
+   <scores-pool ref-id="174">
+      <entry>
+         <multi-key ref-id="175">
+            <keys length="3" ref-id="176">
+               <key class="java.lang.Long" ref="63"/>
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Class" ref-id="177">com.decerns.dsmlib4.values.DSMRandom</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="178">
+            <r-value ref-id="179">
+               <j-params ref-id="180" type="4" lr-flag="false">
+                  <data length="1" ref-id="181">
+                     <double>4.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="182" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="4.0" right-double="4.0" h-double="0.0" average-double="4.0" dispersion-double="0.0" mode-double="4.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="183">
+            <keys length="3" ref-id="184">
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="185">
+            <r-value ref-id="186">
+               <j-params ref-id="187" type="4" lr-flag="false">
+                  <data length="1" ref-id="188">
+                     <double>0.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="189" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="0.0" right-double="0.0" h-double="0.0" average-double="0.0" dispersion-double="0.0" mode-double="0.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="190">
+            <keys length="3" ref-id="191">
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="192">
+            <r-value ref-id="193">
+               <j-params ref-id="194" type="4" lr-flag="false">
+                  <data length="1" ref-id="195">
+                     <double>55.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="196" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="55.0" right-double="55.0" h-double="0.0" average-double="55.0" dispersion-double="0.0" mode-double="55.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="197">
+            <keys length="3" ref-id="198">
+               <key class="java.lang.Long" ref="63"/>
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="199">
+            <r-value ref-id="200">
+               <j-params ref-id="201" type="4" lr-flag="false">
+                  <data length="1" ref-id="202">
+                     <double>0.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="203" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="0.0" right-double="0.0" h-double="0.0" average-double="0.0" dispersion-double="0.0" mode-double="0.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="204">
+            <keys length="3" ref-id="205">
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="206">
+            <r-value ref-id="207">
+               <j-params ref-id="208" type="4" lr-flag="false">
+                  <data length="1" ref-id="209">
+                     <double>0.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="210" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="0.0" right-double="0.0" h-double="0.0" average-double="0.0" dispersion-double="0.0" mode-double="0.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="211">
+            <keys length="3" ref-id="212">
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="213">
+            <r-value ref-id="214">
+               <j-params ref-id="215" type="4" lr-flag="false">
+                  <data length="1" ref-id="216">
+                     <double>2.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="217" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="2.0" right-double="2.0" h-double="0.0" average-double="2.0" dispersion-double="0.0" mode-double="2.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="218">
+            <keys length="3" ref-id="219">
+               <key class="java.lang.Long" ref="63"/>
+               <key class="java.lang.Long" ref-id="220">1</key>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="221">
+            <r-value ref-id="222">
+               <j-params ref-id="223" type="4" lr-flag="false">
+                  <data length="1" ref-id="224">
+                     <double>0.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="225" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="0.0" right-double="0.0" h-double="0.0" average-double="0.0" dispersion-double="0.0" mode-double="0.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="226">
+            <keys length="3" ref-id="227">
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Long" ref="220"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="228">
+            <r-value ref-id="229">
+               <j-params ref-id="230" type="4" lr-flag="false">
+                  <data length="1" ref-id="231">
+                     <double>10.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="232" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="10.0" right-double="10.0" h-double="0.0" average-double="10.0" dispersion-double="0.0" mode-double="10.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="233">
+            <keys length="3" ref-id="234">
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Long" ref="220"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="235">
+            <r-value ref-id="236">
+               <j-params ref-id="237" type="4" lr-flag="false">
+                  <data length="1" ref-id="238">
+                     <double>3.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="239" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="3.0" right-double="3.0" h-double="0.0" average-double="3.0" dispersion-double="0.0" mode-double="3.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="240">
+            <keys length="3" ref-id="241">
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Long" ref="220"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="242">
+            <r-value ref-id="243">
+               <j-params ref-id="244" type="4" lr-flag="false">
+                  <data length="1" ref-id="245">
+                     <double>75.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="246" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="75.0" right-double="75.0" h-double="0.0" average-double="75.0" dispersion-double="0.0" mode-double="75.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="247">
+            <keys length="3" ref-id="248">
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="249">
+            <r-value ref-id="250">
+               <j-params ref-id="251" type="4" lr-flag="false">
+                  <data length="1" ref-id="252">
+                     <double>2.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="253" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="2.0" right-double="2.0" h-double="0.0" average-double="2.0" dispersion-double="0.0" mode-double="2.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="254">
+            <keys length="3" ref-id="255">
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="256">
+            <r-value ref-id="257">
+               <j-params ref-id="258" type="4" lr-flag="false">
+                  <data length="1" ref-id="259">
+                     <double>30.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="260" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="30.0" right-double="30.0" h-double="0.0" average-double="30.0" dispersion-double="0.0" mode-double="30.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="261">
+            <keys length="3" ref-id="262">
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="263">
+            <r-value ref-id="264">
+               <j-params ref-id="265" type="4" lr-flag="false">
+                  <data length="1" ref-id="266">
+                     <double>0.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="267" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="0.0" right-double="0.0" h-double="0.0" average-double="0.0" dispersion-double="0.0" mode-double="0.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="268">
+            <keys length="3" ref-id="269">
+               <key class="java.lang.Long" ref="63"/>
+               <key class="java.lang.Long" ref="84"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="270">
+            <r-value ref-id="271">
+               <j-params ref-id="272" type="4" lr-flag="false">
+                  <data length="1" ref-id="273">
+                     <double>0.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="274" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="0.0" right-double="0.0" h-double="0.0" average-double="0.0" dispersion-double="0.0" mode-double="0.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="275">
+            <keys length="3" ref-id="276">
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="277">
+            <r-value ref-id="278">
+               <j-params ref-id="279" type="4" lr-flag="false">
+                  <data length="1" ref-id="280">
+                     <double>40.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="281" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="40.0" right-double="40.0" h-double="0.0" average-double="40.0" dispersion-double="0.0" mode-double="40.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="282">
+            <keys length="3" ref-id="283">
+               <key class="java.lang.Long" ref="100"/>
+               <key class="java.lang.Long" ref="116"/>
+               <key class="java.lang.Class" ref="177"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMRandom" ref-id="284">
+            <r-value ref-id="285">
+               <j-params ref-id="286" type="4" lr-flag="false">
+                  <data length="1" ref-id="287">
+                     <double>3.0</double>
+                  </data>
+               </j-params>
+               <j-random ref-id="288" n="0" set-flag-int="0" set-flag-bool="false" delta-flag="true" left-double="3.0" right-double="3.0" h-double="0.0" average-double="3.0" dispersion-double="0.0" mode-double="3.0"/>
+            </r-value>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="289">
+            <keys length="3" ref-id="290">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref-id="291">1</key>
+               <key class="java.lang.Class" ref-id="292">com.decerns.dsmlib4.values.DSMFuzzy</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="293">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="294" type="singleton" top="0.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="295">
+            <keys length="3" ref-id="296">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="297">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="298" type="singleton" top="10.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="299">
+            <keys length="3" ref-id="300">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="301">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="302" type="singleton" top="4.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="303">
+            <keys length="3" ref-id="304">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="305">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="306" type="singleton" top="0.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="307">
+            <keys length="3" ref-id="308">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="309">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="310" type="singleton" top="55.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="311">
+            <keys length="3" ref-id="312">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="313">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="314" type="singleton" top="0.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="315">
+            <keys length="3" ref-id="316">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="317">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="318" type="singleton" top="0.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="319">
+            <keys length="3" ref-id="320">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="321">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="322" type="singleton" top="2.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="323">
+            <keys length="3" ref-id="324">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="325">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="326" type="singleton" top="30.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="327">
+            <keys length="3" ref-id="328">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="329">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="330" type="singleton" top="2.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="331">
+            <keys length="3" ref-id="332">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="333">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="334" type="singleton" top="0.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="335">
+            <keys length="3" ref-id="336">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="337">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="338" type="singleton" top="40.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="339">
+            <keys length="3" ref-id="340">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="341">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="342" type="singleton" top="3.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="343">
+            <keys length="3" ref-id="344">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="345">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="346" type="singleton" top="0.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="347">
+            <keys length="3" ref-id="348">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="349">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="350" type="singleton" top="3.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="351">
+            <keys length="3" ref-id="352">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Class" ref="292"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMFuzzy" ref-id="353">
+            <f-value class="fuzzylib.core.SingletonFuzzyNumber" ref-id="354" type="singleton" top="75.0"/>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="355">
+            <keys length="3" ref-id="356">
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Class" ref-id="357">com.decerns.dsmlib4.values.DSMDouble</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="358" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="359">
+            <keys length="3" ref-id="360">
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="361" d-value="55.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="362">
+            <keys length="3" ref-id="363">
+               <key class="java.lang.Long" ref="27"/>
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="364" d-value="4.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="365">
+            <keys length="3" ref-id="366">
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="367" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="368">
+            <keys length="3" ref-id="369">
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="370" d-value="2.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="371">
+            <keys length="3" ref-id="372">
+               <key class="java.lang.Long" ref="27"/>
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="373" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="374">
+            <keys length="3" ref-id="375">
+               <key class="java.lang.Long" ref="27"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="376" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="377">
+            <keys length="3" ref-id="378">
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="379" d-value="10.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="380">
+            <keys length="3" ref-id="381">
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="382" d-value="3.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="383">
+            <keys length="3" ref-id="384">
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="385" d-value="75.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="386">
+            <keys length="3" ref-id="387">
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="388" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="389">
+            <keys length="3" ref-id="390">
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="391" d-value="2.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="392">
+            <keys length="3" ref-id="393">
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="394" d-value="30.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="395">
+            <keys length="3" ref-id="396">
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="397" d-value="3.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="398">
+            <keys length="3" ref-id="399">
+               <key class="java.lang.Long" ref="12"/>
+               <key class="java.lang.Long" ref="14"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="400" d-value="40.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="401">
+            <keys length="3" ref-id="402">
+               <key class="java.lang.Long" ref="27"/>
+               <key class="java.lang.Long" ref="16"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="403" d-value="0.0"/>
+      </entry>
+   </scores-pool>
+   <matrix-scores-pool ref-id="404">
+      <entry>
+         <multi-key ref-id="405">
+            <keys length="4" ref-id="406">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="407" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="408">
+            <keys length="4" ref-id="409">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="410" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="411">
+            <keys length="4" ref-id="412">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="413" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="414">
+            <keys length="4" ref-id="415">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="416" d-value="0.2"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="417">
+            <keys length="4" ref-id="418">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="419" d-value="0.5"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="420">
+            <keys length="4" ref-id="421">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="422" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="423">
+            <keys length="4" ref-id="424">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="425" d-value="0.2"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="426">
+            <keys length="4" ref-id="427">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="428" d-value="3.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="429">
+            <keys length="4" ref-id="430">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="431" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="432">
+            <keys length="4" ref-id="433">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="434" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="435">
+            <keys length="4" ref-id="436">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="437" d-value="2.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="438">
+            <keys length="4" ref-id="439">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="440" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="441">
+            <keys length="4" ref-id="442">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="443" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="444">
+            <keys length="4" ref-id="445">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="446" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="447">
+            <keys length="4" ref-id="448">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="449" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="450">
+            <keys length="4" ref-id="451">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="452" d-value="2.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="453">
+            <keys length="4" ref-id="454">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="455" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="456">
+            <keys length="4" ref-id="457">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="458" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="459">
+            <keys length="4" ref-id="460">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="461" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="462">
+            <keys length="4" ref-id="463">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="464" d-value="0.3333333333333333"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="465">
+            <keys length="4" ref-id="466">
+               <key class="java.lang.Long" ref="95"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="467" d-value="1.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="468">
+            <keys length="4" ref-id="469">
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="127"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="470" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="471">
+            <keys length="4" ref-id="472">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="473" d-value="0.2"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="474">
+            <keys length="4" ref-id="475">
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="77"/>
+               <key class="java.lang.Class" ref="357"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="476" d-value="5.0"/>
+      </entry>
+   </matrix-scores-pool>
+   <crit-params-pool ref-id="477">
+      <entry>
+         <multi-key ref-id="478">
+            <keys length="1" ref-id="479">
+               <key class="java.lang.Long" ref="12"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="480">
+            <param name="is_positive">
+               <object class="java.lang.Boolean" ref-id="481">false</object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="482">
+            <keys length="1" ref-id="483">
+               <key class="java.lang.Long" ref="14"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="484">
+            <param name="scale_max">
+               <object class="java.lang.Double" ref-id="485">3.0</object>
+            </param>
+            <param name="scale_min">
+               <object class="java.lang.Double" ref-id="486">1.0</object>
+            </param>
+            <param name="is_local">
+               <object class="java.lang.Boolean" ref="481"/>
+            </param>
+         </value>
+      </entry>
+   </crit-params-pool>
+   <crit-method-params-pool ref-id="487">
+      <entry>
+         <multi-key ref-id="488">
+            <keys length="2" ref-id="489">
+               <key class="java.lang.Long" ref="55"/>
+               <key class="java.lang.Long" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="490">
+            <param name="pf_q">
+               <object class="java.lang.Double" ref-id="491">25.0</object>
+            </param>
+            <param name="pf_type">
+               <object class="java.lang.Integer" ref-id="492">2</object>
+            </param>
+            <param name="pf_percents">
+               <object class="java.lang.Boolean" ref-id="493">true</object>
+            </param>
+            <param name="pf_p">
+               <object class="java.lang.Double" ref-id="494">20.0</object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="495">
+            <keys length="2" ref-id="496">
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Long" ref="10"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="497">
+            <param name="weight_proc">
+               <object class="java.lang.Integer" ref="79"/>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="498">
+            <keys length="2" ref-id="499">
+               <key class="java.lang.Long" ref="54"/>
+               <key class="java.lang.Long" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="500">
+            <param name="pf_q">
+               <object class="java.lang.Double" ref-id="501">25.0</object>
+            </param>
+            <param name="pf_type">
+               <object class="java.lang.Integer" ref="492"/>
+            </param>
+            <param name="pf_percents">
+               <object class="java.lang.Boolean" ref="493"/>
+            </param>
+            <param name="pf_p">
+               <object class="java.lang.Double" ref-id="502">20.0</object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="503">
+            <keys length="2" ref-id="504">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref-id="505">6</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="506">
+            <param name="vf_exp_k">
+               <object class="java.lang.Double" ref-id="507">0.0</object>
+            </param>
+            <param name="vf_type">
+               <object class="java.lang.Integer" ref="79"/>
+            </param>
+            <param name="vf_pw_points">
+               <object class="com.decerns.dsmlib4.utils.ListEntry" ref-id="508">
+                  <list class="java.util.ArrayList" ref-id="509"/>
+               </object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="510">
+            <keys length="2" ref-id="511">
+               <key class="java.lang.Long" ref="111"/>
+               <key class="java.lang.Long" ref="78"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="512">
+            <param name="vf_exp_k">
+               <object class="java.lang.Double" ref-id="513">0.0</object>
+            </param>
+            <param name="vf_type">
+               <object class="java.lang.Integer" ref="79"/>
+            </param>
+            <param name="vf_pw_points">
+               <object class="com.decerns.dsmlib4.utils.ListEntry" ref-id="514">
+                  <list class="java.util.ArrayList" ref-id="515"/>
+               </object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="516">
+            <keys length="2" ref-id="517">
+               <key class="java.lang.Long" ref="136"/>
+               <key class="java.lang.Long" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="518">
+            <param name="pf_q">
+               <object class="java.lang.Double" ref-id="519">25.0</object>
+            </param>
+            <param name="pf_type">
+               <object class="java.lang.Integer" ref="492"/>
+            </param>
+            <param name="pf_percents">
+               <object class="java.lang.Boolean" ref="493"/>
+            </param>
+            <param name="pf_p">
+               <object class="java.lang.Double" ref-id="520">20.0</object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="521">
+            <keys length="2" ref-id="522">
+               <key class="java.lang.Long" ref="132"/>
+               <key class="java.lang.Long" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="523">
+            <param name="pf_q">
+               <object class="java.lang.Double" ref-id="524">25.0</object>
+            </param>
+            <param name="pf_type">
+               <object class="java.lang.Integer" ref="492"/>
+            </param>
+            <param name="pf_p">
+               <object class="java.lang.Double" ref-id="525">20.0</object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="526">
+            <keys length="2" ref-id="527">
+               <key class="java.lang.Long" ref="220"/>
+               <key class="java.lang.Long" ref="64"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="528">
+            <param name="weight_proc">
+               <object class="java.lang.Integer" ref="65"/>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="529">
+            <keys length="2" ref-id="530">
+               <key class="java.lang.Long" ref="291"/>
+               <key class="java.lang.Long" ref="140"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="531">
+            <param name="weight_proc">
+               <object class="java.lang.Integer" ref="79"/>
+            </param>
+         </value>
+      </entry>
+   </crit-method-params-pool>
+   <cat-scores-pool ref-id="532"/>
+</dsm-model>

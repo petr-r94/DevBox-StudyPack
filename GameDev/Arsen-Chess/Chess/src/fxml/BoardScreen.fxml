@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+
+
+<Group fx:controller="control.FXMLBoardScreenController" 
+    	xmlns:fx="http://javafx.com/fxml">
+<Canvas fx:id="canvas"
+    	>
+</Canvas>
+<Label styleClass="colorMove" fx:id="moveLabel" text="White"/>
+</Group>

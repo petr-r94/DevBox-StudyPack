@@ -1,0 +1,14 @@
+mvn eclipse:eclipse
+#############
+
+1)./standalone.sh
+2)mvn install
+3)ПЕРЕНЕСТИ WAR на DEPLOYMENTS
+4)mvn wildfly:redeploy
+
+##################
+
+В target лежит .war
+
+http://127.0.0.1:8080/Pharaon-1.0-SNAPSHOT
+

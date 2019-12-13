@@ -1,0 +1,1 @@
+g++ LTANKS.cpp -o LTanks -lglut -lGL -lglfw

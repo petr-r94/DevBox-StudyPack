@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+E:\Документы\Bazar-Nazar\LABA_4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2897196817.index
+\LABA_FOUR\src

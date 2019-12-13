@@ -1,0 +1,14 @@
+1433180892633	Copy file
+1433181694263	Delete element
+1433181824518	Rename resource 'phar.css'
+1433181840987	Rename resource 'phar.html'
+1433253627346	Move 'images' to 'phar'
+1433255000550	Move 'images' to 'public'
+1433256502575	Encapsulate field 'work'
+1433341275733	Delete element
+1433342185152	Encapsulate field 'work'
+1433417159819	Encapsulate field 'koeff'
+1433419416036	Encapsulate field 'perHour'
+1433419896294	Encapsulate field 'perHour'
+1433420106274	Encapsulate field 'dataPerHour'
+1433489259087	Encapsulate field 'time'

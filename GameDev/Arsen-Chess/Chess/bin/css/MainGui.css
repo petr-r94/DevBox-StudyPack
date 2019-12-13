@@ -1,0 +1,59 @@
+
+.pafos {
+    -fx-font-family: "Kid nightmare";
+    -fx-font-size: 85px;
+    -fx-font-weight: bold;
+    
+}
+.rootgrid {
+     -fx-background-image: url("../img/background.jpg");
+	 -fx-background-repeat: no-repeat;
+	 -fx-background-size: cover;
+}
+.mainButton {
+    -fx-text-fill: #CEEBEA;
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#121111, #141111);
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+    -fx-font-size: 28px;
+    -fx-opacity: 0.9;
+    -fx-background-radius: 30;
+    -fx-border-radius: 20px;
+}
+.mainButton:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.namel {
+	-fx-font-size: 24px;
+	-fx-font-weight: bold;
+	-fx-text-fill: linear-gradient(#DFF705, #8FB74A);
+}
+.status_namel {
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	-fx-border-style: solid;
+	-fx-border-color: derive(#1d1d1d,50%);
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+    -fx-background-color: derive(#bdbdbd,90%);
+}
+.cbox {
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-color: linear-gradient(#121111, #141111);
+	-fx-opacity: 0.6;
+}
+.colorMove {
+	
+		-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	-fx-border-style: solid;
+	-fx-border-color: derive(#1d1d1d,50%);
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+    -fx-background-color: derive(#bdbdbd,90%);
+}

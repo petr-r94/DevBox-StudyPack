@@ -1,0 +1,30 @@
+package linkedlist;
+import java.util.NoSuchElementException;
+public class LinkedList<E> implements Stack<E> {
+	private int count;
+    private Node head;
+    private class Node {
+        private E ele;
+        private Node next;
+    }
+    public LinkedList<E> push(E ele){
+        Node current = head;
+        head = new Node();
+        head.ele = ele;
+        head.next = current;
+        count++;
+        return this;
+    }
+    public E pop(){
+        if (head == null) new NoSuchElementException();
+        E ele = head.ele;
+        head = head.next;
+        count--;
+        return ele;
+    }
+    public static void main(String[] args) {
+		Stack<String> pile = new LinkedList<>();
+		pile.push("!").push("Sir").push(" ").push(",").push("day").push(" ").push("good").push(" ").push("a").push(" ").push("Have");
+		System.out.println(pile.pop() + pile.pop() + pile.pop()+pile.pop()+pile.pop()+pile.pop()+pile.pop()+pile.pop()+pile.pop()+pile.pop()+pile.pop());
+	}
+}

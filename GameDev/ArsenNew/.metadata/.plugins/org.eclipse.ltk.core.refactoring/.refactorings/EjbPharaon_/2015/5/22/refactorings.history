@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;EjbPharaon/ejbModule&apos;&#x0A;- Original project: &apos;EjbPharaon_&apos;&#x0A;- Destination element: &apos;EjbPharaon/ejbModule&apos;&#x0A;- Original elements:&#x0A;     EjbPharaon_/ejbModule/ru.pharaon.databaselogic&#x0A;     EjbPharaon_/ejbModule/ru.pharaon.businesslogic" description="Copy packages" destination="=EjbPharaon/ejbModule" element1="/ejbModule&lt;ru.pharaon.databaselogic" element2="/ejbModule&lt;ru.pharaon.businesslogic" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1432738919683" version="1.0"/>
+</session>

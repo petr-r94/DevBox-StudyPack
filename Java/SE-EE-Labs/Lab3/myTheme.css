@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url(background.png) repeat center center fixed;
+    background-size: cover;
+}
+
+hr {
+	background-color: #555555;
+	border: 0;
+	height: 1px;
+	margin: 0;
+}
+#header2 {
+	background-color: #555555;
+}
+#header {
+	background-color: #555555;
+	border: 0;
+	height: 60px;
+	margin: 0;	
+}
+h1.mainheader {
+	color: #55CC99;
+	color: yellow;
+	font-family: "Times New Roman", serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 50px;
+	text-transform: capitalize;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+}
+#menu ul li {
+	display: inline;
+}
+#menu ul a {
+	border-right: 1px solid #338833;
+	border-left: 1px solid #338833;
+	border-top: 1px solid #338833;
+	border-bottom: 0;
+	background-color: #3388AA;
+	color: white;
+	font-family: "Tahoma", sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	margin-bottom: 20px;
+	padding-right: 18px;
+	padding-left: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+#menu ul li a:hover {
+	border: 1px solid #DCDCDC;
+	background-color: #55CC99;
+	text-decoration: underline;
+}
+#container {
+	border-left: 10px solid #6495ED;
+	border-right: 10px solid #6495ED;
+	margin-top: 0;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-bottom: 0;
+}
+.table {
+    display: "";
+    border-style:solid;
+    border-width:1px;
+	width: 100%;
+    border-collapse:collapse;
+    padding:20px;
+	margin-bottom: 1px;
+	background-color: lightblue;
+}
+.table td, th, tr {
+    display: "";
+    border-style:solid;
+    border-width:0px;
+	width: 115px;
+    border-collapse:collapse;
+    padding:20px;
+	margin-bottom: 1px;
+	text-align: center;
+	background-color: lightblue;
+}
+h3.raspisanye {
+	color: #DCDCDC;
+	text-align: center;
+	margin-top: 1px;
+	padding-top: 55px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	
+}
+#foot {
+	clear: both;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 20%;
+	margin-left: 20%;
+	border: 1px solid #DCDCDC;
+	background-color: #6495ED;
+	height: 31px;
+}
+.valid { float: left; border:0; width:88px; height:31px; }
+.submail { 
+	color: white;
+	font-family: "Times New Roman", serif;
+	font-size: 20px;
+	text-align: right;
+	text-decoration: none;
+}
+.submail:hover { 
+	text-decoration: underline;
+	color: yellow;
+}
+
+.align_center_to_left {
+position: relative;
+right: 50%;
+float: right;
+}
+.align_center_to_right {
+position: relative;
+right: -50%;
+}

@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1386589977 source:/home/rain/Some_TAnks/tanki_2/tanki_2/Merge_LTANKS.cpp
+	<ctime>
+	<time.h>
+	<math.h>
+	<iostream>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+	"kostin.h"
+	"interface.h"
+
+1386588997 /home/rain/Some_TAnks/tanki_2/tanki_2/models.h
+
+1383086410 /home/rain/Some_TAnks/tanki_2/tanki_2/kostin.h
+
+1383379170 /home/rain/Some_TAnks/tanki_2/tanki_2/interface.h
+	<GL/glut.h>
+
+1386763431 source:c:\users\Администратор\documents\Курсовые\tanki_2\merge_ltanks.cpp
+	<ctime>
+	<time.h>
+	<math.h>
+	<iostream>
+	<GL/glfw.h>
+	<GL/glut.h>
+	"models.h"
+	"kostin.h"
+	"interface.h"
+
+1386763430 c:\users\Администратор\documents\Курсовые\tanki_2\models.h
+
+1386763431 c:\users\Администратор\documents\Курсовые\tanki_2\kostin.h
+
+1386763430 c:\users\Администратор\documents\Курсовые\tanki_2\interface.h
+	<GL/glut.h>
+

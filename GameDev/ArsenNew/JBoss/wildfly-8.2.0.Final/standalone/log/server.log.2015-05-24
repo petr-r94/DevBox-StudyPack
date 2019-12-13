@@ -1,0 +1,495 @@
+2015-05-24 00:31:12,252 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017532: Host default-host stopping
+2015-05-24 00:31:20,420 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-05-24 00:31:20,857 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016009: Stopping weld service for deployment EjbPharaon.jar
+2015-05-24 00:31:23,378 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010418: Stopped Driver service with driver-name = h2
+2015-05-24 00:31:25,797 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017521: Undertow HTTP listener default suspending
+2015-05-24 00:31:25,867 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-05-24 00:31:26,238 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017506: Undertow 1.1.0.Final stopping
+2015-05-24 00:31:29,758 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment EjbPharaon.jar (runtime-name: EjbPharaon.jar) in 25136ms
+2015-05-24 00:31:30,035 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 25374ms
+2015-05-24 17:08:46,259 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-05-24 17:08:48,178 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-05-24 17:08:48,567 INFO  [org.jboss.as] (MSC service thread 1-2) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-05-24 17:08:48,583 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/endorsed
+	java.ext.dirs = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386/server:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/../lib/i386:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386::/usr/java/packages/lib/i386:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final
+	jboss.host.name = rainhost
+	jboss.modules.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = rainhost
+	jboss.qualified.host.name = rainhost
+	jboss.server.base.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = rainhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = i386
+	os.name = Linux
+	os.version = 3.16.0-4-686-pae
+	path.separator = :
+	program.name = JBossTools: WildFly 8.x
+	sun.arch.data.model = 32
+	sun.boot.class.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/resources.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/rt.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/sunrsasign.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jsse.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jce.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/charsets.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jfr.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/classes
+	sun.boot.library.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/bin
+	user.home = /home/rain
+	user.language = en
+	user.name = rain
+	user.timezone = Europe/Moscow
+2015-05-24 17:08:48,585 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.x -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2015-05-24 17:08:56,512 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found EjbPharaon.jar in deployment directory. To trigger deployment create a file called EjbPharaon.jar.dodeploy
+2015-05-24 17:08:56,556 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-05-24 17:08:56,675 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.0.Final
+2015-05-24 17:08:56,718 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.0.Final
+2015-05-24 17:08:57,084 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-05-24 17:08:57,116 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-05-24 17:08:57,092 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-05-24 17:08:57,091 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-05-24 17:08:57,135 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 4 core threads with 32 task threads based on your 2 available processors
+2015-05-24 17:08:57,133 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-05-24 17:08:57,208 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-05-24 17:08:57,388 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-05-24 17:08:57,656 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-05-24 17:08:57,900 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017502: Undertow 1.1.0.Final starting
+2015-05-24 17:08:57,905 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-05-24 17:08:58,080 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
+2015-05-24 17:08:58,320 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-05-24 17:08:58,331 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-05-24 17:08:58,528 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-05-24 17:08:58,574 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = h2
+2015-05-24 17:08:58,940 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/welcome-content
+2015-05-24 17:08:59,194 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017525: Started server default-server.
+2015-05-24 17:08:59,481 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017531: Host default-host starting
+2015-05-24 17:08:59,953 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-05-24 17:09:00,679 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/deployments
+2015-05-24 17:09:00,693 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "EjbPharaon.jar" (runtime-name: "EjbPharaon.jar")
+2015-05-24 17:09:00,957 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry EjbPharaonClient.jar in /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/deployments/EjbPharaon.jar  does not point to a valid jar for a Class-Path reference.
+2015-05-24 17:09:01,519 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-05-24 17:09:03,078 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016002: Processing weld deployment EjbPharaon.jar
+2015-05-24 17:09:03,337 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-05-24 17:09:03,615 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 5.1.3.Final
+2015-05-24 17:09:04,046 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-3) JNDI bindings for session bean named DataBean in deployment unit deployment "EjbPharaon.jar" are as follows:
+
+	java:global/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:app/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:module/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:jboss/exported/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:global/EjbPharaon/DataBean
+	java:app/EjbPharaon/DataBean
+	java:module/DataBean
+
+2015-05-24 17:09:04,621 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016005: Starting Services for CDI deployment: EjbPharaon.jar
+2015-05-24 17:09:04,821 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.2.6 (Final)
+2015-05-24 17:09:04,954 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016008: Starting weld service for deployment EjbPharaon.jar
+2015-05-24 17:09:08,071 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "EjbPharaon.jar" (runtime-name : "EjbPharaon.jar")
+2015-05-24 17:09:08,227 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-05-24 17:09:08,229 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-05-24 17:09:08,233 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 24211ms - Started 257 of 311 services (90 services are lazy, passive or on-demand)
+2015-05-24 19:33:35,824 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found EarPharaon.ear in deployment directory. To trigger deployment create a file called EarPharaon.ear.dodeploy
+2015-05-24 19:33:40,845 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "EarPharaon.ear" (runtime-name: "EarPharaon.ear")
+2015-05-24 19:33:40,945 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015973: Starting subdeployment (runtime-name: "EjbPharaon.jar")
+2015-05-24 19:33:40,954 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry EjbPharaonClient.jar in /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/deployments/EarPharaon.ear/EjbPharaon.jar  does not point to a valid jar for a Class-Path reference.
+2015-05-24 19:33:40,985 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) JBAS011401: Read persistence.xml for JpaPharaon
+2015-05-24 19:33:41,105 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 51) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 19:33:41,135 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 51) HHH000204: Processing PersistenceUnitInfo [
+	name: JpaPharaon
+	...]
+2015-05-24 19:33:41,362 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 51) HHH000412: Hibernate Core {4.3.7.Final}
+2015-05-24 19:33:41,366 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 51) HHH000206: hibernate.properties not found
+2015-05-24 19:33:41,370 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 51) HHH000021: Bytecode provider name : javassist
+2015-05-24 19:33:41,535 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016002: Processing weld deployment EarPharaon.ear
+2015-05-24 19:33:41,658 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016002: Processing weld deployment EjbPharaon.jar
+2015-05-24 19:33:41,661 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named DataBean in deployment unit subdeployment "EjbPharaon.jar" of deployment "EarPharaon.ear" are as follows:
+
+	java:global/EarPharaon/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:app/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:module/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:jboss/exported/EarPharaon/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:global/EarPharaon/EjbPharaon/DataBean
+	java:app/EjbPharaon/DataBean
+	java:module/DataBean
+
+2015-05-24 19:33:41,739 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016005: Starting Services for CDI deployment: EarPharaon.ear
+2015-05-24 19:33:41,748 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016008: Starting weld service for deployment EarPharaon.ear
+2015-05-24 19:33:41,794 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 51) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 19:33:42,098 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 51) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-05-24 19:33:43,109 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 51) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-05-24 19:33:43,157 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 51) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-05-24 19:33:43,486 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 51) HHH000397: Using ASTQueryTranslatorFactory
+2015-05-24 19:33:44,450 WARN  [org.hibernate.internal.SessionFactoryImpl] (ServerService Thread Pool -- 51) HHH000008: JTASessionContext being used with JDBCTransactionFactory; auto-flush will not operate correctly with getCurrentSession()
+2015-05-24 19:33:45,649 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018559: Deployed "EarPharaon.ear" (runtime-name : "EarPharaon.ear")
+2015-05-24 19:45:47,502 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016009: Stopping weld service for deployment EjbPharaon.jar
+2015-05-24 19:45:47,546 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment EjbPharaon.jar (runtime-name: EjbPharaon.jar) in 130ms
+2015-05-24 19:45:47,664 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) JBAS018558: Undeployed "EjbPharaon.jar" (runtime-name: "EjbPharaon.jar")
+2015-05-24 19:57:16,812 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017532: Host default-host stopping
+2015-05-24 19:57:16,926 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-05-24 19:57:16,927 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 54) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 19:57:17,042 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016009: Stopping weld service for deployment EarPharaon.ear
+2015-05-24 19:57:17,104 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 54) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 19:57:17,123 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017521: Undertow HTTP listener default suspending
+2015-05-24 19:57:17,128 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-05-24 19:57:17,146 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015974: Stopped subdeployment (runtime-name: EjbPharaon.jar) in 392ms
+2015-05-24 19:57:17,159 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017506: Undertow 1.1.0.Final stopping
+2015-05-24 19:57:17,173 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment EarPharaon.ear (runtime-name: EarPharaon.ear) in 416ms
+2015-05-24 19:57:17,180 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = h2
+2015-05-24 19:57:17,223 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 459ms
+2015-05-24 19:57:19,967 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-05-24 19:57:21,456 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-05-24 19:57:21,819 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-05-24 19:57:21,857 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/endorsed
+	java.ext.dirs = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386/server:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/../lib/i386:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386::/usr/java/packages/lib/i386:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final
+	jboss.host.name = rainhost
+	jboss.modules.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = rainhost
+	jboss.qualified.host.name = rainhost
+	jboss.server.base.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = rainhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = i386
+	os.name = Linux
+	os.version = 3.16.0-4-686-pae
+	path.separator = :
+	program.name = JBossTools: WildFly 8.x
+	sun.arch.data.model = 32
+	sun.boot.class.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/resources.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/rt.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/sunrsasign.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jsse.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jce.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/charsets.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jfr.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/classes
+	sun.boot.library.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/bin
+	user.home = /home/rain
+	user.language = en
+	user.name = rain
+	user.timezone = Europe/Moscow
+2015-05-24 19:57:21,862 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.x -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2015-05-24 19:57:29,532 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found EarPharaon.ear in deployment directory. To trigger deployment create a file called EarPharaon.ear.dodeploy
+2015-05-24 19:57:29,587 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-05-24 19:57:29,687 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+2015-05-24 19:57:29,709 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+2015-05-24 19:57:30,141 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-05-24 19:57:30,179 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-05-24 19:57:30,187 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-05-24 19:57:30,212 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-05-24 19:57:30,188 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-05-24 19:57:30,218 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 4 core threads with 32 task threads based on your 2 available processors
+2015-05-24 19:57:30,262 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-05-24 19:57:30,346 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.6.Final
+2015-05-24 19:57:30,373 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-05-24 19:57:30,567 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-05-24 19:57:31,087 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-05-24 19:57:31,089 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017502: Undertow 1.1.0.Final starting
+2015-05-24 19:57:31,693 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-05-24 19:57:31,713 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-05-24 19:57:32,193 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/welcome-content
+2015-05-24 19:57:32,438 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-05-24 19:57:32,713 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-05-24 19:57:32,801 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017525: Started server default-server.
+2015-05-24 19:57:32,893 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017531: Host default-host starting
+2015-05-24 19:57:33,418 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-05-24 19:57:34,157 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) JBAS015012: Started FileSystemDeploymentService for directory /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/deployments
+2015-05-24 19:57:34,217 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "EarPharaon.ear" (runtime-name: "EarPharaon.ear")
+2015-05-24 19:57:35,327 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015973: Starting subdeployment (runtime-name: "EjbPharaon.jar")
+2015-05-24 19:57:35,355 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015960: Class Path entry EjbPharaonClient.jar in /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/deployments/EarPharaon.ear/EjbPharaon.jar  does not point to a valid jar for a Class-Path reference.
+2015-05-24 19:57:35,379 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-05-24 19:57:35,762 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) JBAS011401: Read persistence.xml for JpaPharaon
+2015-05-24 19:57:36,499 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 19:57:36,577 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: JpaPharaon
+	...]
+2015-05-24 19:57:36,745 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-05-24 19:57:36,927 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.3.7.Final}
+2015-05-24 19:57:36,939 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+2015-05-24 19:57:36,944 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+2015-05-24 19:57:37,265 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) JBAS016002: Processing weld deployment EarPharaon.ear
+2015-05-24 19:57:37,718 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.1.3.Final
+2015-05-24 19:57:38,230 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016002: Processing weld deployment EjbPharaon.jar
+2015-05-24 19:57:38,240 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named DataBean in deployment unit subdeployment "EjbPharaon.jar" of deployment "EarPharaon.ear" are as follows:
+
+	java:global/EarPharaon/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:app/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:module/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:jboss/exported/EarPharaon/EjbPharaon/DataBean!ru.pharaon.businesslogic.DataBeanRemote
+	java:global/EarPharaon/EjbPharaon/DataBean
+	java:app/EjbPharaon/DataBean
+	java:module/DataBean
+
+2015-05-24 19:57:38,361 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016005: Starting Services for CDI deployment: EarPharaon.ear
+2015-05-24 19:57:38,531 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.2.6 (Final)
+2015-05-24 19:57:38,608 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) JBAS016008: Starting weld service for deployment EarPharaon.ear
+2015-05-24 19:57:39,496 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 19:57:39,834 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-05-24 19:57:40,880 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 50) HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2015-05-24 19:57:40,906 WARN  [org.hibernate.dialect.H2Dialect] (ServerService Thread Pool -- 50) HHH000431: Unable to determine H2 database version, certain features may not work
+2015-05-24 19:57:41,348 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 50) HHH000397: Using ASTQueryTranslatorFactory
+2015-05-24 19:57:42,587 WARN  [org.hibernate.internal.SessionFactoryImpl] (ServerService Thread Pool -- 50) HHH000008: JTASessionContext being used with JDBCTransactionFactory; auto-flush will not operate correctly with getCurrentSession()
+2015-05-24 19:57:44,926 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "EarPharaon.ear" (runtime-name : "EarPharaon.ear")
+2015-05-24 19:57:45,115 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-05-24 19:57:45,115 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-05-24 19:57:45,116 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 26866ms - Started 289 of 349 services (98 services are lazy, passive or on-demand)
+2015-05-24 20:47:08,892 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017532: Host default-host stopping
+2015-05-24 20:47:10,411 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-05-24 20:47:10,475 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 51) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 20:47:10,615 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016009: Stopping weld service for deployment EarPharaon.ear
+2015-05-24 20:47:12,438 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 51) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'EarPharaon.ear#JpaPharaon'
+2015-05-24 20:47:12,506 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015974: Stopped subdeployment (runtime-name: EjbPharaon.jar) in 3710ms
+2015-05-24 20:47:12,681 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017521: Undertow HTTP listener default suspending
+2015-05-24 20:47:12,702 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-05-24 20:47:12,721 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017506: Undertow 1.1.0.Final stopping
+2015-05-24 20:47:13,433 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment EarPharaon.ear (runtime-name: EarPharaon.ear) in 4632ms
+2015-05-24 20:47:13,720 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010418: Stopped Driver service with driver-name = h2
+2015-05-24 20:47:14,138 INFO  [org.jboss.as] (MSC service thread 1-1) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 5329ms
+2015-05-24 21:22:24,140 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-05-24 21:22:25,619 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-05-24 21:22:25,896 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-05-24 21:22:25,915 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/endorsed
+	java.ext.dirs = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386/server:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/../lib/i386:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386::/usr/java/packages/lib/i386:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final
+	jboss.host.name = rainhost
+	jboss.modules.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = rainhost
+	jboss.qualified.host.name = rainhost
+	jboss.server.base.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone
+	jboss.server.config.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log
+	jboss.server.name = rainhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = i386
+	os.name = Linux
+	os.version = 3.16.0-4-686-pae
+	path.separator = :
+	program.name = JBossTools: WildFly 8.x
+	sun.arch.data.model = 32
+	sun.boot.class.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/resources.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/rt.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/sunrsasign.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jsse.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jce.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/charsets.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/jfr.jar:/home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/classes
+	sun.boot.library.path = /home/rain/Downloads/Additional/JAVA/jdk1.8.0_45/jre/lib/i386
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/bin
+	user.home = /home/rain
+	user.language = en
+	user.name = rain
+	user.timezone = Europe/Moscow
+2015-05-24 21:22:25,918 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.x -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2015-05-24 21:22:33,193 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-05-24 21:22:33,280 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.0.Final
+2015-05-24 21:22:33,361 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.0.Final
+2015-05-24 21:22:33,729 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-05-24 21:22:33,742 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 4 core threads with 32 task threads based on your 2 available processors
+2015-05-24 21:22:33,786 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-05-24 21:22:33,799 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-05-24 21:22:33,784 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-05-24 21:22:33,788 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-05-24 21:22:33,843 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-05-24 21:22:33,880 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
+2015-05-24 21:22:33,995 INFO  [org.jboss.as.security] (MSC service thread 1-1) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-05-24 21:22:34,236 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-05-24 21:22:34,236 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017502: Undertow 1.1.0.Final starting
+2015-05-24 21:22:34,488 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-05-24 21:22:34,678 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-05-24 21:22:34,746 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-05-24 21:22:34,795 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-05-24 21:22:34,823 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-05-24 21:22:35,202 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/welcome-content
+2015-05-24 21:22:35,461 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017525: Started server default-server.
+2015-05-24 21:22:35,588 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017531: Host default-host starting
+2015-05-24 21:22:36,162 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-05-24 21:22:37,225 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory /home/rain/ArsenNew/JBoss/wildfly-8.2.0.Final/standalone/deployments
+2015-05-24 21:22:37,516 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-05-24 21:22:39,723 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-05-24 21:22:40,128 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-05-24 21:22:40,134 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-05-24 21:22:40,135 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 17502ms - Started 184 of 234 services (82 services are lazy, passive or on-demand)

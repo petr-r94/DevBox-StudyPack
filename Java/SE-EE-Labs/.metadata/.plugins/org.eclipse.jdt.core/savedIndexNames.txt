@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+E:\Документы\Bazar-Nazar\.metadata\.plugins\org.eclipse.jdt.core
+1007340512.index
+2768476762.index

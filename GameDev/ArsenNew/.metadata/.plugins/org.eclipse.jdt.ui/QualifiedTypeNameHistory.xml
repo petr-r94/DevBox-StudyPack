@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.VerticalPanel"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Label"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Button"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Image"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.TextBox"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.HorizontalPanel"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Composite"/>
+<fullyQualifiedTypeName name="com.google.gwt.core.client.EntryPoint"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.RootPanel"/>
+<fullyQualifiedTypeName name="ru.pharaon.businesslogic.DataBean"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.rpc.RemoteService"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.rpc.RemoteServiceRelativePath"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.server.rpc.RemoteServiceServlet"/>
+<fullyQualifiedTypeName name="ru.pharaon.client.service.ExService"/>
+<fullyQualifiedTypeName name="com.google.gwt.core.shared.GWT"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.rpc.ServiceDefTarget"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.rpc.AsyncCallback"/>
+<fullyQualifiedTypeName name="ru.pharaon.client.gui.MainWebGui"/>
+<fullyQualifiedTypeName name="com.google.gwt.core.client.GWT"/>
+<fullyQualifiedTypeName name="ru.pharaon.client.service.ExServiceClientImp"/>
+<fullyQualifiedTypeName name="ru.pharaon.server.AppClient"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.HasVerticalAlignment"/>
+<fullyQualifiedTypeName name="ru.pharaon.service.CreateData"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="ru.pharaon.businesslogic.DataBeanRemote"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
+<fullyQualifiedTypeName name="ru.pharaon.databaselogic.CreateData"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="ru.pharaon.databaselogic.Data"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.cellview.client.CellTable"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.cellview.client.TextColumn"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.DOM"/>
+<fullyQualifiedTypeName name="phar.shared.FieldVerifier"/>
+<fullyQualifiedTypeName name="com.google.gwt.cell.client.SelectionCell"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.ListBox"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.DialogBox"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.cellview.client.Column"/>
+<fullyQualifiedTypeName name="com.google.gwt.cell.client.TextInputCell"/>
+<fullyQualifiedTypeName name="com.google.gwt.cell.client.FieldUpdater"/>
+<fullyQualifiedTypeName name="com.google.gwt.cell.client.EditTextCell"/>
+</qualifiedTypeNameHistroy>

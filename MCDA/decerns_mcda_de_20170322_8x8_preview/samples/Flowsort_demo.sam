@@ -1,0 +1,459 @@
+<dsm-model ref-id="0" crits-id-counter="4" alts-id-counter="4" cats-id-counter="2" methods-id-counter="2" root-id="1" current-method-id="2">
+   <model-params ref-id="1">
+      <param name="alt_colors">
+         <object class="com.decerns.dsmlib4.utils.MapEntry" ref-id="2">
+            <map ref-id="3">
+               <element>
+                  <long ref-id="4">1</long>
+                  <object class="java.awt.Color" ref-id="5" r="85" g="196" b="67" a="255"/>
+               </element>
+               <element>
+                  <long ref-id="6">2</long>
+                  <object class="java.awt.Color" ref-id="7" r="68" g="188" b="196" a="255"/>
+               </element>
+               <element>
+                  <long ref-id="8">3</long>
+                  <object class="java.awt.Color" ref-id="9" r="147" g="69" b="197" a="255"/>
+               </element>
+               <element>
+                  <long ref-id="10">4</long>
+                  <object class="java.awt.Color" ref-id="11" r="196" g="65" b="60" a="255"/>
+               </element>
+            </map>
+         </object>
+      </param>
+   </model-params>
+   <model-crits ref-id="12">
+      <crit crit-id="1">
+         <criterion ref-id="13" id="1" name="TASK" parent-id="0"/>
+      </crit>
+      <crit crit-id="2">
+         <criterion ref-id="14" id="2" name="crit1" parent-id="1"/>
+      </crit>
+      <crit crit-id="3">
+         <criterion ref-id="15" id="3" name="crit2" parent-id="1"/>
+      </crit>
+      <crit crit-id="4">
+         <criterion ref-id="16" id="4" name="crit3" parent-id="1"/>
+      </crit>
+   </model-crits>
+   <model-crit-struct ref-id="17">
+      <crit-link crit-link-id="1">
+         <criterion-links ref-id="18" id="1">
+            <links ref-id="19">
+               <link ref="6"/>
+               <link ref="8"/>
+               <link ref="10"/>
+            </links>
+         </criterion-links>
+      </crit-link>
+      <crit-link crit-link-id="2">
+         <criterion-links ref-id="20" id="2">
+            <links ref-id="21"/>
+         </criterion-links>
+      </crit-link>
+      <crit-link crit-link-id="3">
+         <criterion-links ref-id="22" id="3">
+            <links ref-id="23"/>
+         </criterion-links>
+      </crit-link>
+      <crit-link crit-link-id="4">
+         <criterion-links ref-id="24" id="4">
+            <links ref-id="25"/>
+         </criterion-links>
+      </crit-link>
+   </model-crit-struct>
+   <model-alts ref-id="26">
+      <alt alt-id="1">
+         <alternative ref-id="27" id="1" name="a1"/>
+      </alt>
+      <alt alt-id="2">
+         <alternative ref-id="28" id="2" name="a2"/>
+      </alt>
+      <alt alt-id="3">
+         <alternative ref-id="29" id="3" name="a3"/>
+      </alt>
+      <alt alt-id="4">
+         <alternative ref-id="30" id="4" name="a4"/>
+      </alt>
+   </model-alts>
+   <model-cats ref-id="31">
+      <cat cat-id="1">
+         <category ref-id="32" id="1" name="cat1"/>
+      </cat>
+      <cat cat-id="2">
+         <category ref-id="33" id="2" name="cat2"/>
+      </cat>
+   </model-cats>
+   <model-methods ref-id="34">
+      <method method-id="1">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMMavt" ref-id="35" id="1" title="MAVT" description="MAVT">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+      <method method-id="2">
+         <dsm-method class="com.decerns.dsmlib4.methods.DSMFlowSort" ref-id="36" id="2" title="FlowSort" description="FlowSort">
+            <model ref="0"/>
+         </dsm-method>
+      </method>
+   </model-methods>
+   <weights-pool ref-id="37">
+      <entry>
+         <multi-key ref-id="38">
+            <keys length="3" ref-id="39">
+               <key class="java.lang.Long" ref-id="40">3</key>
+               <key class="java.lang.Long" ref-id="41">2</key>
+               <key class="java.lang.Integer" ref-id="42">1</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="43" d-value="0.3333333333333333"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="44">
+            <keys length="3" ref-id="45">
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Integer" ref="42"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="46" d-value="0.3333333333333333"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="47">
+            <keys length="3" ref-id="48">
+               <key class="java.lang.Long" ref-id="49">4</key>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Integer" ref="42"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="50" d-value="0.3333333333333333"/>
+      </entry>
+   </weights-pool>
+   <matrix-weights-pool ref-id="51"/>
+   <scores-pool ref-id="52">
+      <entry>
+         <multi-key ref-id="53">
+            <keys length="3" ref-id="54">
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Long" ref="4"/>
+               <key class="java.lang.Class" ref-id="55">com.decerns.dsmlib4.values.DSMDouble</key>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="56" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="57">
+            <keys length="3" ref-id="58">
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="4"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="59" d-value="17.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="60">
+            <keys length="3" ref-id="61">
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="62" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="63">
+            <keys length="3" ref-id="64">
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="65" d-value="7.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="66">
+            <keys length="3" ref-id="67">
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="68" d-value="13.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="69">
+            <keys length="3" ref-id="70">
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="71" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="72">
+            <keys length="3" ref-id="73">
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="74" d-value="13.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="75">
+            <keys length="3" ref-id="76">
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="77" d-value="5.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="78">
+            <keys length="3" ref-id="79">
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="80" d-value="10.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="81">
+            <keys length="3" ref-id="82">
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="83" d-value="12.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="84">
+            <keys length="3" ref-id="85">
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="86" d-value="15.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="87">
+            <keys length="3" ref-id="88">
+               <key class="java.lang.Long" ref="10"/>
+               <key class="java.lang.Long" ref="4"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="89" d-value="8.0"/>
+      </entry>
+   </scores-pool>
+   <matrix-scores-pool ref-id="90"/>
+   <crit-params-pool ref-id="91"/>
+   <crit-method-params-pool ref-id="92">
+      <entry>
+         <multi-key ref-id="93">
+            <keys length="2" ref-id="94">
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Long" ref="41"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="95">
+            <param name="pf_q">
+               <object class="java.lang.Double" ref-id="96">3.0</object>
+            </param>
+            <param name="pf_type">
+               <object class="java.lang.Integer" ref-id="97">3</object>
+            </param>
+            <param name="pf_percents">
+               <object class="java.lang.Boolean" ref-id="98">false</object>
+            </param>
+            <param name="pf_p">
+               <object class="java.lang.Double" ref-id="99">1.0</object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="100">
+            <keys length="2" ref-id="101">
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Long" ref="6"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="102">
+            <param name="pf_q">
+               <object class="java.lang.Double" ref-id="103">2.5</object>
+            </param>
+            <param name="pf_type">
+               <object class="java.lang.Integer" ref="97"/>
+            </param>
+            <param name="pf_percents">
+               <object class="java.lang.Boolean" ref="98"/>
+            </param>
+            <param name="pf_p">
+               <object class="java.lang.Double" ref-id="104">1.0</object>
+            </param>
+         </value>
+      </entry>
+      <entry>
+         <multi-key ref-id="105">
+            <keys length="2" ref-id="106">
+               <key class="java.lang.Long" ref="49"/>
+               <key class="java.lang.Long" ref="41"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.utils.Bundle" ref-id="107">
+            <param name="pf_q">
+               <object class="java.lang.Double" ref-id="108">2.0</object>
+            </param>
+            <param name="pf_type">
+               <object class="java.lang.Integer" ref="97"/>
+            </param>
+            <param name="pf_percents">
+               <object class="java.lang.Boolean" ref="98"/>
+            </param>
+            <param name="pf_p">
+               <object class="java.lang.Double" ref-id="109">1.0</object>
+            </param>
+         </value>
+      </entry>
+   </crit-method-params-pool>
+   <cat-scores-pool ref-id="110">
+      <entry>
+         <multi-key ref-id="111">
+            <keys length="4" ref-id="112">
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="113" d-value="20.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="114">
+            <keys length="4" ref-id="115">
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="116" d-value="11.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="117">
+            <keys length="4" ref-id="118">
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="119" d-value="9.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="120">
+            <keys length="4" ref-id="121">
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="8"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="122" d-value="20.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="123">
+            <keys length="4" ref-id="124">
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Long" ref-id="125">1</key>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="126" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="127">
+            <keys length="4" ref-id="128">
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Long" ref="125"/>
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="129" d-value="11.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="130">
+            <keys length="4" ref-id="131">
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Long" ref="125"/>
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="132" d-value="9.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="133">
+            <keys length="4" ref-id="134">
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Long" ref="4"/>
+               <key class="java.lang.Long" ref="6"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="135" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="136">
+            <keys length="4" ref-id="137">
+               <key class="java.lang.Long" ref="49"/>
+               <key class="java.lang.Long" ref="125"/>
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="138" d-value="8.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="139">
+            <keys length="4" ref-id="140">
+               <key class="java.lang.Long" ref="49"/>
+               <key class="java.lang.Long" ref="125"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="141" d-value="0.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="142">
+            <keys length="4" ref-id="143">
+               <key class="java.lang.Long" ref="49"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="144" d-value="8.0"/>
+      </entry>
+      <entry>
+         <multi-key ref-id="145">
+            <keys length="4" ref-id="146">
+               <key class="java.lang.Long" ref="49"/>
+               <key class="java.lang.Long" ref="41"/>
+               <key class="java.lang.Long" ref="40"/>
+               <key class="java.lang.Class" ref="55"/>
+            </keys>
+         </multi-key>
+         <value class="com.decerns.dsmlib4.values.DSMDouble" ref-id="147" d-value="20.0"/>
+      </entry>
+   </cat-scores-pool>
+</dsm-model>

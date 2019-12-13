@@ -1,0 +1,11 @@
+1432479284590	Rename package 'ru.pharaon.enity'
+1432479760747	Encapsulate field 'name'
+1432479787105	Encapsulate field 'id'
+1432481169130	Rename type 'Data'
+1432481193186	Rename type 'data'
+1432482023030	Delete element
+1432482689405	Move compilation unit
+1432717559108	Rename package 'ru.pharaon.service'
+1432717950094	Copy compilation unit
+1432717993786	Copy compilation unit
+1432718067618	Delete element
