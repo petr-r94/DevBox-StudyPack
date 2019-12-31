@@ -1,0 +1,7 @@
+*.java linguist-detectable=true
+*.scala linguist-detectable=true
+*.c linguist-detectable=false
+*.cpp linguist-detectable=false
+*.pl linguist-detectable=false
+*.html linguist-detectable=false
+*.css linguist-detectable=false
